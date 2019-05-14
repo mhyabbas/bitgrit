@@ -404,6 +404,40 @@
  	font-size: 22px;
  }
 
+ /* Why bitgrit */
+
+ .video-wrapper {
+ 	position: relative;
+ }
+
+ .video-wrapper img {
+ 	position: absolute;
+ 	top: -35px;
+ 	left: -20px;
+ }
+
+ .plyr {
+ 	-webkit-box-shadow: 8px 8px 0px 0px #6F389F;
+ 	box-shadow: 8px 8px 0px 0px #6F389F;
+ }
+
+ .plyr__control--overlaid {
+ 	background: rgba(111, 56, 159, .8);
+ }
+
+ .plyr--video .plyr__control.plyr__tab-focus, .plyr--video .plyr__control:hover, .plyr--video .plyr__control[aria-expanded=true] {
+ 	background: #6F389F;
+ }
+
+ .plyr__control.plyr__tab-focus {
+ 	-webkit-box-shadow: 0 0 0 5px rgba(111, 56, 159, .5);
+ 	box-shadow: 0 0 0 5px rgba(111, 56, 159, .5);
+ }
+
+ .plyr--full-ui input[type=range] {
+ 	color: #6F389F;
+ }
+
  /* FAQ */
 
  #faq .card {
@@ -458,6 +492,78 @@
  	fill: #6F389F;
  }
 
+ /* Testimonial */
+ #testimonial {
+ 	padding: 0;
+ }
+
+ #testimonial .testimonial-img {
+ 	height: 400px;
+ 	background-image: url('../img/testimonial.jpg');
+ 	background-size: cover;
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ }
+
+ #testimonial .testimonial-bg {
+ 	height: 400px;
+ 	background-image: url('../img/testimonial bg.png');
+ 	background-size: cover;
+ 	background-position: center center;
+ 	background-repeat: no-repeat;
+ }
+
+ @media (max-width: 1199.98px) { 
+ 	#testimonial .testimonial-img {
+ 		height: 350px;
+ 	}
+ 	#testimonial .testimonial-bg {
+ 		height: 350px;
+ 	}
+ }
+
+ @media (max-width: 991.98px) { 
+ 	#testimonial .testimonial-img {
+ 		height: 380px;
+ 	}
+ 	#testimonial .testimonial-bg {
+ 		height: 380px;
+ 	}
+ }
+
+ @media (max-width: 767.98px) { 
+ 	#testimonial .testimonial-img {
+ 		height: 350px;
+ 	}
+ 	#testimonial .testimonial-bg {
+ 		height: 350px;
+ 	}
+ }
+
+ @media (max-width: 575.98px) { 
+ 	#testimonial .testimonial-img {
+ 		height: 350px;
+ 	}
+ 	#testimonial .testimonial-bg {
+ 		height: 420px;
+ 	}
+ }
+
+ @media (max-width: 374.98px) { 
+ 	#testimonial .testimonial-img {
+ 		height: 320px;
+ 	}
+ 	#testimonial .testimonial-bg {
+ 		height: 440px;
+ 	}
+ }
+
+ #testimonial .macpaw-logo {
+ 	width: 100px;
+ 	-webkit-filter: invert(100%); /* Safari */
+ 	filter: invert(100%);
+ }
+
  /* Call to action */
  #call-to-action {
  	padding: 140px 0;
@@ -467,8 +573,6 @@
  	background-repeat: no-repeat;
  	background-attachment: fixed;
  }
-
-
 
 
 
@@ -636,32 +740,21 @@
  /* Partners */
 
  #partners .owl-carousel .owl-stage {
+ 	display: -webkit-box;
+ 	display: -ms-flexbox;
  	display: flex;
  	align-items: center;
  }
 
+ #partners .owl-stage-outer {
+ 	margin-bottom: 30px;
+ }
+
  #partners .owl-carousel .owl-item img {
- 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
- 	filter: grayscale(100%);
- 	max-height: 70px !important;
+ 	max-height: 50px !important;
  	max-width: 140px !important;
  	width: auto !important;
  	margin: 0 auto;
- 	transition: all 0.6s;
- }
-
- #partners .owl-carousel .owl-item img:hover, #partners .owl-carousel .owl-item a:hover img {
- 	-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
- 	filter: grayscale(0%);
- }
-
- #partners .owl-carousel .owl-item a img.area2071 {
- 	opacity: 0.6;
- 	transition: all 0.6s;
- }
-
- #partners .owl-carousel .owl-item a:hover img.area2071 {
- 	opacity: 1;
  }
 
  /* Newsletter */
@@ -681,11 +774,11 @@
 
  #newsletter input {
  	color: white;
- 	border-radius: 25px;
+ 	border-top-left-radius: 25px;
+ 	border-bottom-left-radius: 25px;
  	border: none;
- 	padding: 15px 25px;
+ 	padding: 25px;
  	background-color: rgba(225, 225, 225, 0.1);
- 	width: 100%;
  }
 
  #newsletter ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -752,7 +845,9 @@
 
  #contact .icon {
  	fill: #6F389F;
- 	transition: all 0.6s;
+ 	-webkit-transition: all .5s;
+ 	-o-transition: all .5s;
+ 	transition: all .5s;
  }
 
  #contact .media:hover .icon {
@@ -761,7 +856,9 @@
 
  #contact .circle {
  	fill: #F8F9FA;
- 	transition: all 0.6s;
+ 	-webkit-transition: all .5s;
+ 	-o-transition: all .5s;
+ 	transition: all .5s;
  }
 
  #contact .media:hover .circle {
@@ -770,7 +867,9 @@
 
  #contact .facebook {
  	fill: #3B5998;
- 	transition: all 0.6s;
+ 	-webkit-transition: all .5s;
+ 	-o-transition: all .5s;
+ 	transition: all .5s;
  }
 
  #contact .facebook:hover {
@@ -779,7 +878,9 @@
 
  #contact .twitter {
  	fill: #4099FF;
- 	transition: all 0.6s;
+ 	-webkit-transition: all .5s;
+ 	-o-transition: all .5s;
+ 	transition: all .5s;
  }
 
  #contact .twitter:hover {
@@ -788,7 +889,9 @@
 
  #contact .youtube {
  	fill: #CD201F;
- 	transition: all 0.6s;
+ 	-webkit-transition: all .5s;
+ 	-o-transition: all .5s;
+ 	transition: all .5s;
  }
 
  #contact .youtube:hover {
@@ -800,14 +903,65 @@
  }
 
  #contact .instagram stop {
- 	transition: 0.6s;
+ 	-webkit-transition: all .5s;
+ 	-o-transition: all .5s;
+ 	transition: all .5s;
  }
 
  #contact .instagram:hover stop:first-child {
  	stop-color: #6F389F;
  }
+
  #contact .instagram:hover stop:last-child {
  	stop-color: #6F389F;
+ }
+
+ #contact .slack .circle {
+ 	fill: #4A154B;
+ 	-webkit-transition: all .5s;
+ 	-o-transition: all .5s;
+ 	transition: all .5s;
+ }
+
+ #contact .slack .red {
+ 	fill: #E01E5A;
+ }
+
+ #contact .slack .blue {
+ 	fill: #36C5F0;
+ }
+
+ #contact .slack .green {
+ 	fill: #2EB67D;
+ }
+
+ #contact .slack .yellow {
+ 	fill: #ECB22E;
+ }
+
+ #contact .slack:hover .circle {
+ 	fill: #6F389F;
+ }
+
+ #contact .slack g path {
+ 	-webkit-transition: all .5s;
+ 	-o-transition: all .5s;
+ 	transition: all .5s;
+ }
+
+ #contact .slack:hover g path {
+ 	fill: white;
+ }
+
+ #contact .linkedin {
+ 	fill: #0C76AE;
+ 	-webkit-transition: all .5s;
+ 	-o-transition: all .5s;
+ 	transition: all .5s;
+ }
+
+ #contact .linkedin:hover {
+ 	fill: #6F389F;
  }
 
  /* Mouse scroll */

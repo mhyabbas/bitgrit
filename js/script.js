@@ -48,4 +48,28 @@
   	$(this).parent().find("svg").removeClass("show");
   })
 
+  /* Partners */
+  $('.owl-partners').owlCarousel({
+    responsiveClass:true,
+    margin:20,
+    rewind:true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      500:{
+        items:2,
+      },
+      600:{
+        items:3,
+      },
+      800:{
+        items:4,
+      },
+      1000:{
+        items:6,
+      }
+    }
+  })
+
 })(jQuery); // End of use strict
