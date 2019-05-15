@@ -47,12 +47,16 @@
 <body id="page-top">
 
 	<svg style="display: none;">
-		<symbol id="linkedin" viewBox="0 0 24 28">
-			<path d="M5.453 9.766v15.484h-5.156v-15.484h5.156zM5.781 4.984c0.016 1.484-1.109 2.672-2.906 2.672v0h-0.031c-1.734 0-2.844-1.188-2.844-2.672 0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-0.75-3.5-2.609-3.5-1.422 0-2.266 0.953-2.641 1.875-0.125 0.344-0.172 0.797-0.172 1.266v8.641h-5.141c0.063-14.031 0-15.484 0-15.484h5.141v2.25h-0.031c0.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z"></path>
+		<symbol id="linkedin" viewBox="0 0 32 32">
+			<title>LinkedIn</title>
+			<path d="M24,24h-3.3v-5.2c0-1.2,0-2.8-1.7-2.8s-2,1.3-2,2.7V24h-3.3V13.3h3.2v1.5l0,0
+			c0.4-0.8,1.5-1.7,3.1-1.7c3.4,0,4,2.2,4,5.1V24z M9.9,11.9C8.8,11.9,8,11,8,10s0.9-1.9,1.9-1.9c1.1,0,1.9,0.9,1.9,1.9
+			S11,11.9,9.9,11.9L9.9,11.9z M11.6,24H8.3V13.3h3.3V24z M0,16c0,8.8,7.2,16,16,16s16-7.2,16-16S24.8,0,16,0S0,7.2,0,16z"/>
 		</symbol>
 
 		<symbol id="info" viewBox="0 0 20 20">
-			<path d="M12.432 0c1.34 0 2.010 0.912 2.010 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-0.75-1.974-1.99 0-1.043 0.881-2.479 2.643-2.479zM8.309 20c-1.058 0-1.833-0.652-1.093-3.524l1.214-5.092c0.211-0.814 0.246-1.141 0-1.141-0.317 0-1.689 0.562-2.502 1.117l-0.528-0.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273 0.705 3.23l-1.391 5.352c-0.246 0.945-0.141 1.271 0.106 1.271 0.317 0 1.357-0.392 2.379-1.207l0.6 0.814c-2.502 2.547-5.235 3.527-6.291 3.527z"></path>
+			<title>Info</title>
+			<path d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM10.896 3.866c0.936 0 1.211 0.543 1.211 1.164 0 0.775-0.62 1.492-1.679 1.492-0.886 0-1.308-0.445-1.282-1.182 0-0.621 0.519-1.474 1.75-1.474zM8.498 15.75c-0.64 0-1.107-0.389-0.66-2.094l0.733-3.025c0.127-0.484 0.148-0.678 0-0.678-0.191 0-1.022 0.334-1.512 0.664l-0.319-0.523c1.555-1.299 3.343-2.061 4.108-2.061 0.64 0 0.746 0.756 0.427 1.92l-0.84 3.18c-0.149 0.562-0.085 0.756 0.064 0.756 0.192 0 0.82-0.232 1.438-0.719l0.362 0.486c-1.513 1.512-3.162 2.094-3.801 2.094z"></path>
 		</symbol>
 	</svg>
 
@@ -106,7 +110,7 @@
 					<p class="text-muted mb-2 mb-sm-3">We connect data scientists to real-world problem statements and provide customized AI solutions. Let our community of 3,700+ data scientists work with you to solve your AI problems.</p>
 					<div class="row">
 						<div class="col-8 col-sm-12">
-							<a class="btn btn-primary mr-2 mb-2 mb-sm-3" target="_blank" href="#">Contact Us</a>
+							<a class="btn btn-primary mr-2 mb-2 mb-sm-3" href="mailto:info@bitgrit.net">Contact Us</a>
 							<a class="btn btn-secondary mb-2 mb-sm-3" target="_blank" href="#">White Paper</a>
 						</div>
 					</div>
@@ -449,7 +453,489 @@
 		<div class="container text-center">
 			<h2 class="heading-title mb-0">Our team</h2>
 			<h2 class="mb-5"><small>A perfect blend of creativity and technical wizardry.</small></h2>
-			<div class="row">
+			<ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="pills-core-tab" data-toggle="pill" href="#pills-core" role="tab" aria-controls="pills-core" aria-selected="true">Core team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-cofounders-tab" data-toggle="pill" href="#pills-cofounders" role="tab" aria-controls="pills-cofounders" aria-selected="false">Co-Founders</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-development-tab" data-toggle="pill" href="#pills-development" role="tab" aria-controls="pills-development" aria-selected="false">Development</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-community-tab" data-toggle="pill" href="#pills-community" role="tab" aria-controls="pills-community" aria-selected="false">Community</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-marketing-tab" data-toggle="pill" href="#pills-marketing" role="tab" aria-controls="pills-marketing" aria-selected="false">Marketing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-hr-tab" data-toggle="pill" href="#pills-hr" role="tab" aria-controls="pills-hr" aria-selected="false">Human Resources</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" id="pills-advisors-tab" data-toggle="pill" href="#pills-advisors" role="tab" aria-controls="pills-advisors" aria-selected="false">Advisors</a>
+				</li>
+			</ul>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="pills-core" role="tabpanel" aria-labelledby="pills-core-tab">
+					<div class="owl-core owl-carousel owl-theme">
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#frederikModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Frederik.png" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Frederik Bussler</h5>
+								<p class="text-muted text-uppercase">CEO</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/frederikbussler/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#ashishModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Ashish.png" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Ashish Malhotra</h5>
+								<p class="text-muted text-uppercase">Director</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/ashish-malhotra-2609344/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#muktaModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Mukta.png" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Mukta Arora</h5>
+								<p class="text-muted text-uppercase">CIO</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/muktaarora/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#yuriaModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Yuria.png" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Yuria Kondo</h5>
+								<p class="text-muted text-uppercase">COO</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/yuria-kondo/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-cofounders" role="tabpanel" aria-labelledby="pills-cofounders-tab">
+					<div class="row justify-content-center">
+						<div class="owl-cofounders owl-carousel owl-theme col-lg-7">
+							<div class="card mx-auto">
+								<div class="card-img">
+									<div class="card-img-overlay d-flex align-items-end justify-content-center">
+										<a href="#" data-toggle="modal" data-target="#tetsuroModal">
+					                  		<svg><use xlink:href="#info"></use></svg>
+					                	</a>
+									</div>
+									<img src="img/team/Tetsuro.png" alt="team">
+								</div>
+								<div class="card-body">
+									<h5 class="mb-0">Tetsuro Masunaga</h5>
+									<p class="text-muted text-uppercase">Founder and Director</p>
+									<a class="linkedin" href="https://www.linkedin.com/in/tetsuro-masunaga-12370b62/" target="_blank">
+										<svg><use xlink:href="#linkedin"></use></svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="card mx-auto">
+								<div class="card-img">
+									<div class="card-img-overlay d-flex align-items-end justify-content-center">
+										<a href="#" data-toggle="modal" data-target="#kazuyaModal">
+					                  		<svg><use xlink:href="#info"></use></svg>
+					                	</a>
+									</div>
+									<img src="img/team/Kazuya.png" alt="team">
+								</div>
+								<div class="card-body">
+									<h5 class="mb-0">Kazuya Saginawa</h5>
+									<p class="text-muted text-uppercase">Co-founder</p>
+									<a class="linkedin" href="https://www.linkedin.com/in/kazuya-saginawa/" target="_blank">
+										<svg><use xlink:href="#linkedin"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-development" role="tabpanel" aria-labelledby="pills-development-tab">
+					<div class="owl-development owl-carousel owl-theme">
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#gautamModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Gautam.png" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Gautam Bajaj</h5>
+								<p class="text-muted text-uppercase">Software Engineer</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/d34th4ck3r/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#deepaliModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Deepali.jpeg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Deepali Varshney</h5>
+								<p class="text-muted text-uppercase">Project Manager</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/deepalivarshney/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#melanionModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Melanion.jpg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Melanion Hendra</h5>
+								<p class="text-muted text-uppercase">Project Manager</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/melanion-hendra-673a85172/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#shubhamModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Shubham.jpg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Shubham Tatvamasi</h5>
+								<p class="text-muted text-uppercase">DApps Engineer</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/shubhamtatvamasi/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#sameepModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Sameep.png" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Sameep Singhania</h5>
+								<p class="text-muted text-uppercase">Blockchain Engineer</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/sameepsi/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-community" role="tabpanel" aria-labelledby="pills-community-tab">
+					<div class="owl-community owl-carousel owl-theme">
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#baljenderModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Baljender.jpeg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Baljender Singh</h5>
+								<p class="text-muted text-uppercase">Community Manager</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/baljender-singh-5b5b82102/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#sarfrazModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Sarfraz.jpg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Sarfraz Petkar</h5>
+								<p class="text-muted text-uppercase">Project Manager</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/sarfraz-petkar-7b59297b/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#johnModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/John.jpg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">John Keyser</h5>
+								<p class="text-muted text-uppercase">Community Manager and Translator</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/john-b-keyser-b63911161/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#sakshamModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Saksham.jpeg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Saksham Kukreja</h5>
+								<p class="text-muted text-uppercase">Developer</p>
+								<a class="linkedin" href="http://www.linkedin.com/in/sakshamkukreja/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-marketing" role="tabpanel" aria-labelledby="pills-marketing-tab">
+					<div class="row justify-content-center">
+						<div class="owl-marketing owl-carousel owl-theme col-lg-7">
+							<div class="card mx-auto">
+								<div class="card-img">
+									<div class="card-img-overlay d-flex align-items-end justify-content-center">
+										<a href="#" data-toggle="modal" data-target="#johnwuModal">
+					                  		<svg><use xlink:href="#info"></use></svg>
+					                	</a>
+									</div>
+									<img src="img/team/John Wu.jpg" alt="team">
+								</div>
+								<div class="card-body">
+									<h5 class="mb-0">John Wu</h5>
+									<p class="text-muted text-uppercase">Project Manager</p>
+									<a class="linkedin" href="https://www.linkedin.com/in/xiangyu-john-wu/" target="_blank">
+										<svg><use xlink:href="#linkedin"></use></svg>
+									</a>
+								</div>
+							</div>
+
+							<div class="card mx-auto">
+								<div class="card-img">
+									<div class="card-img-overlay d-flex align-items-end justify-content-center">
+										<a href="#" data-toggle="modal" data-target="#joeyModal">
+					                  		<svg><use xlink:href="#info"></use></svg>
+					                	</a>
+									</div>
+									<img src="img/team/Joey.jpg" alt="team">
+								</div>
+								<div class="card-body">
+									<h5 class="mb-0">Joey Bertschler</h5>
+									<p class="text-muted text-uppercase">Digital Marketer</p>
+									<a class="linkedin" href="https://www.linkedin.com/in/joey-bitgrit/" target="_blank">
+										<svg><use xlink:href="#linkedin"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-hr" role="tabpanel" aria-labelledby="pills-hr-tab">
+					<div class="row justify-content-center">
+						<div class="owl-hr owl-carousel owl-theme col-lg-7">
+							<div class="card mx-auto">
+								<div class="card-img">
+									<div class="card-img-overlay d-flex align-items-end justify-content-center">
+										<a href="#" data-toggle="modal" data-target="#kyokoModal">
+					                  		<svg><use xlink:href="#info"></use></svg>
+					                	</a>
+									</div>
+									<img src="img/team/Kyoko.jpeg" alt="team">
+								</div>
+								<div class="card-body">
+									<h5 class="mb-0">Kyoko Sakaino</h5>
+									<p class="text-muted text-uppercase">Head of HR</p>
+									<a class="linkedin" href="https://www.linkedin.com/in/kyokosakaino/" target="_blank">
+										<svg><use xlink:href="#linkedin"></use></svg>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="pills-advisors" role="tabpanel" aria-labelledby="pills-advisors-tab">
+					<div class="owl-advisors owl-carousel owl-theme">
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#guptaModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Prof Gupta.jpg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Professor M. P. Gupta</h5>
+								<p class="text-muted text-uppercase">Research Collaborator</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/profmpgupta/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#karModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Prof Kar.jpg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Professor Arpan Kar</h5>
+								<p class="text-muted text-uppercase">Research Collaborator</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/arpankar/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#koshizukaModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Prof Koshizuka.jpg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Professor Noboru Koshizuka</h5>
+								<p class="text-muted text-uppercase">Research Collaborator</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/noboru-koshizuka-b65903a/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#eiadModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Eiad.jpeg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Dr. Eiad Yafi</h5>
+								<p class="text-muted text-uppercase">Research Collaborator</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/eyafi/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#rupinderModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Rupinder.jpg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Rupinder Goel</h5>
+								<p class="text-muted text-uppercase">Business Advisor</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/rupinder-goel-7228124/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+
+						<div class="card mx-auto">
+							<div class="card-img">
+								<div class="card-img-overlay d-flex align-items-end justify-content-center">
+									<a href="#" data-toggle="modal" data-target="#waelModal">
+				                  		<svg><use xlink:href="#info"></use></svg>
+				                	</a>
+								</div>
+								<img src="img/team/Wael.jpeg" alt="team">
+							</div>
+							<div class="card-body">
+								<h5 class="mb-0">Wael Osman</h5>
+								<p class="text-muted text-uppercase">Business Advisor</p>
+								<a class="linkedin" href="https://www.linkedin.com/in/waelosman/" target="_blank">
+									<svg><use xlink:href="#linkedin"></use></svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -459,7 +945,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="testimonial-img col-md-4">
-					<!--<img class="img-fluid" src="img/testimonial.jpg" alt="testimonial">-->
 				</div>
 				<div class="testimonial-bg d-flex col-md-8 text-white px-md-5">
 					<div class="my-auto">
@@ -490,7 +975,7 @@
 				<div class="col-sm-6">
 					<h2 class="heading-title mb-0">Contact us</h2>
 					<h2 class="text-white display-4">Ready for an easier AI journey?</h2>
-					<a class="btn btn-primary" target="_blank" href="#">Contact Sales</a>
+					<a class="btn btn-primary" href="mailto:info@bitgrit.net">Contact Sales</a>
 				</div>
 			</div>
 		</div>
@@ -757,6 +1242,469 @@
 			<p class="m-0 text-secondary">Copyright &copy; bitgrit 2019. All Rights Reserved.</p>
 		</div>
 	</footer>
+
+	<!-- Core Bio Modal -->
+	<div class="modal fade" id="frederikModal" tabindex="-1" role="dialog" aria-labelledby="frederikModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="frederikModalLabel">Frederik Bussler</h5>
+						<p class="text-secondary mb-0">CEO</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Frederik Bussler is the CEO of bitgrit, a democratic AI platform directly connecting data scientists to industry problem statements. Before heading bitgrit, he founded a cybersecurity company in the blockchain space named Smart Contract Auditing, co-founded a vertical farming startup named EinFarm to solve sustainability issues, worked as Chief Data Officer for a democratic AI startup in the health space, advised a stock exchange, studied abroad, and worked as an analyst at Maven 11 Capital.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="ashishModal" tabindex="-1" role="dialog" aria-labelledby="ashishModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="ashishModalLabel">Ashish Malhotra</h5>
+						<p class="text-secondary mb-0">Director</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Ashish is a passionate, self-driven, result oriented professional with over 20 years of experience in Business Strategy, Sales, Marketing, Client Relationships & Project Management. Ashish has been instrumental in making many start-ups into successful ventures, primarily in Information Technology-Cloud, Cyber Security, Virtualization, Data Centres & other Technologies.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="muktaModal" tabindex="-1" role="dialog" aria-labelledby="muktaModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="muktaModalLabel">Mukta Arora</h5>
+						<p class="text-secondary mb-0">CIO</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Group Chief Information Officer at Aster DM Healthcare, a leading healthcare authority in the Middle East, India and Far East.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="yuriaModal" tabindex="-1" role="dialog" aria-labelledby="yuriaModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="yuriaModalLabel">Yuria Kondo</h5>
+						<p class="text-secondary mb-0">COO</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Joined bitgrit in its early stages, streamlining processes in different departments within the organization such as administration, marketing, and technical development to reach new heights.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Co-Founders Bio Modal -->
+	<div class="modal fade" id="tetsuroModal" tabindex="-1" role="dialog" aria-labelledby="tetsuroModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="tetsuroModalLabel">Tetsuro Masunaga</h5>
+						<p class="text-secondary mb-0">Founder and Director</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Over 15+ years of experience in management and the TMT industry, involved in advertisement for Tokyo Olympics and other ventures. Founded Cosmology Inc., a web-focused advertisement company in 2011. Quickly expanded his company’s business portfolio with his expertise in PR and advertisement, later founding the bitgrit project with Kazuya Saginawa as co-founder.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="kazuyaModal" tabindex="-1" role="dialog" aria-labelledby="kazuyaModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="kazuyaModalLabel">Kazuya Saginawa</h5>
+						<p class="text-secondary mb-0">Co-founder</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Entered Canon Inc. in 2010 as a patent engineer, garnering experience in technological assessment and intellectual property. Saginawa then developed an interest in AI, Blockchain, and Cryptocurrency, pursuing his newfound passion by founding bitgrit with Tetsuro Masunaga.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Development Bio Modal -->
+	<div class="modal fade" id="gautamModal" tabindex="-1" role="dialog" aria-labelledby="gautamModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="gautamModalLabel">Gautam Bajaj</h5>
+						<p class="text-secondary mb-0">Software Engineer</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Experienced Software Engineer at Square Enix, Fandom, and Softbank Mobile, with Data Science experience at [24]7.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="deepaliModal" tabindex="-1" role="dialog" aria-labelledby="deepaliModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="deepaliModalLabel">Deepali Varshney</h5>
+						<p class="text-secondary mb-0">Project Manager</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>A self-taught programmer and a multilingual, with an experience in web development and outreach roles, Deepali now works on the brand and community development of bitgrit.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="melanionModal" tabindex="-1" role="dialog" aria-labelledby="melanionModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="melanionModalLabel">Melanion Hendra</h5>
+						<p class="text-secondary mb-0">Project Manager</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Graduating from the University of Technology Sydney with Majors in IT, International Relations and Japanese Language, Melanion’s focus is on Intercultural Communication and Business/IT alignment as well as Business Process Management.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="shubhamModal" tabindex="-1" role="dialog" aria-labelledby="shubhamModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="shubhamModalLabel">Shubham Tatvamasi</h5>
+						<p class="text-secondary mb-0">DApps Engineer</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>A Blockchain Architect and Ethereum open source contributor, Shubham has been working on Blockchain technologies since 2015 onwards. Shubham entered into Blockchain space because he truly believes that this is the future of Internet and wants to make this a reality. Shubham’s life’s goal is to build a world where everything is transparent and full of trust.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="sameepModal" tabindex="-1" role="dialog" aria-labelledby="sameepModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="sameepModalLabel">Sameep Singhania</h5>
+						<p class="text-secondary mb-0">Blockchain Engineer</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Sameep Singhania has bachelor's degree in Computer Science and has been a professional programmer for the more than 5 years. He would characterize himself as a Software Developer, Blockchain Engineer and consultant. Sameep has worked for multinational and product based organizations in the past developing enterprise applications for them.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Community Bio Modal -->
+	<div class="modal fade" id="baljenderModal" tabindex="-1" role="dialog" aria-labelledby="baljenderModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="baljenderModalLabel">Baljender Singh</h5>
+						<p class="text-secondary mb-0">Community Manager</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Experienced Community Manager with a demonstrated history of working in the information technology and services industry. Skilled in Microsoft Excel, Customer Service, Strategic Planning, and Business Development. Strong marketing professional with a PGDM focused in Marketing from Universal Business School.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="sarfrazModal" tabindex="-1" role="dialog" aria-labelledby="sarfrazModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="sarfrazModalLabel">Sarfraz Petkar</h5>
+						<p class="text-secondary mb-0">Project Manager</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>14 years of experience in Finance, Operations, Project Management, and OTC Derivatives; worked with Morgan Stanley, SSNC, JP Morgan. Has a 3-year Diploma in Computer Science. Based out of Tokyo since Jan. 2018, exploring the field of AI Blockchain through Project Management and Community Building.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="johnModal" tabindex="-1" role="dialog" aria-labelledby="johnModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="johnModalLabel">John Keyser</h5>
+						<p class="text-secondary mb-0">Community Manager and Translator</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>With experience as a software engineer at a gaming corporation in Japan, Keyser has also built his career in translation and interpreting: commissioned by numerous firms for consulting services regarding overseas expansion both to and from Japan. Entering into bitgrit early 2018, he provides multi-lingual support and engages in overseas expansion efforts.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="sakshamModal" tabindex="-1" role="dialog" aria-labelledby="sakshamModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="sakshamModalLabel">Saksham Kukreja</h5>
+						<p class="text-secondary mb-0">Developer</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Student at the Indian Institute of Technology Roorkee, pursuing entrepreneurship, research and development in emerging technologies. Experienced in strategic, technological, innovation and community building roles at companies like Microsoft and Tech Mahindra, and institutions like the University of Tokyo, IIT Delhi and IIT Roorkee.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Marketing Bio Modal -->
+	<div class="modal fade" id="johnwuModal" tabindex="-1" role="dialog" aria-labelledby="johnwuModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="johnwuModalLabel">John Wu</h5>
+						<p class="text-secondary mb-0">Project Manager</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>My current mission is to gather Data Scientists into an active online community. Supporting blockchain projects to grow in Japan.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="joeyModal" tabindex="-1" role="dialog" aria-labelledby="joeyModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="joeyModalLabel">Joey Bertschler</h5>
+						<p class="text-secondary mb-0">Digital Marketer</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Once an ordinary office worker in Liechtenstein, Joey yearned to learn more of the world and went to business school in Austria. Unsatisfied with the traditional ways taught there, Joey’s entrepreneurial spirit brought him to Japan. Here, Joey discovered the bitgrit project.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- HR Bio Modal -->
+	<div class="modal fade" id="kyokoModal" tabindex="-1" role="dialog" aria-labelledby="kyokoModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="kyokoModalLabel">Kyoko Sakaino</h5>
+						<p class="text-secondary mb-0">Head of HR</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Chuo University 2012-2016. Joined NTT-east inc. in Corporate Sales and Teijin inc. as HR. Received the national license of Employment Counselor at Teijin. After retirement of Teijin, she became a head of HR in bitgrit. Further, she writes articles of HR and gives advice to college students. Her job covers a wide range of organizational tasks at bitgrit.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Advisors Bio Modal -->
+	<div class="modal fade" id="guptaModal" tabindex="-1" role="dialog" aria-labelledby="guptaModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="guptaModalLabel">Professor M. P. Gupta</h5>
+						<p class="text-secondary mb-0">Research Collaborator</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Chair Professor & Head of Management Department at Indian Institute of Technology Delhi (India). Known for pioneering works in the area of e-governance. Founded the International Conference on E-governance (ICEG) in 2003, which is running into its 12th year with 14 edited volumes available publicly at www.iceg.net. Gupta is involved in several policy-making committees on ICT in India for both the central and state government.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="karModal" tabindex="-1" role="dialog" aria-labelledby="karModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="karModalLabel">Professor Arpan Kar</h5>
+						<p class="text-secondary mb-0">Research Collaborator</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Associate Professor of Information Systems at the Indian Institute of Technology Delhi. Specialized in Data Science, Machine Learning, Social Media, Digital Transformation, Smart Cities, ICT4D and E-Governance. He has published over 100 articles and 5 books which are highly cited. He has been awarded for research, teaching, and advocacy by multiple reputed organizations like International Federation of Information Processing, Project Management Institute, Association of Indian Management Schools, IIT Delhi, Tata Consultancy Services, etc.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="koshizukaModal" tabindex="-1" role="dialog" aria-labelledby="koshizukaModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="koshizukaModalLabel">Professor Noboru Koshizuka</h5>
+						<p class="text-secondary mb-0">Research Collaborator</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Professor of Interfaculty Initiatives in Information Studies at the University of Tokyo and the University of Tokyo Graduate School of Interdisciplinary Information Studies, in addition to the General Information Analysis and Information Science Courses.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="eiadModal" tabindex="-1" role="dialog" aria-labelledby="eiadModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="eiadModalLabel">Dr. Eiad Yafi</h5>
+						<p class="text-secondary mb-0">Research Collaborator</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Dr. Eiad Yafi is an Assistant Professor at the Malaysian Institute of Information Technology and Deputy Dean of the Institute of Postgraduate Studies, Universiti Kuala Lumpur. He received his PhD in Computer Science from the Jamia Hamdard University, India. Before joining UniKL, he was a faculty member at Arab International University Damascus, Syria. He is active in research in the areas of data mining, Blockchain, Human Computer Interaction and ICTD.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="rupinderModal" tabindex="-1" role="dialog" aria-labelledby="rupinderModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="rupinderModalLabel">Rupinder Goel</h5>
+						<p class="text-secondary mb-0">Business Advisor</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Global Chief Information, Officer Tata Communications India. A global technology leader with over 25 years of experience in digital and telecommunications for transformation of B2B and B2C operations. Goel has led digital transformation at multinational corporations by driving the adoption of the cloud, mobility, big data, social and automation using BoTs, the blockchain, APIs, AI, AR, IoT and m2m.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="waelModal" tabindex="-1" role="dialog" aria-labelledby="waelModallLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">
+						<h5 class="mb-0" id="waelModalLabel">Wael Osman</h5>
+						<p class="text-secondary mb-0">Business Advisor</p>
+					</div>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Executive Chairman at Ryts, as well as the CEO of Pixonal, Wael holds 27 years of experience in both the Governmental and Private sectors, including working in the Executive Office of HRH Sheikh Mohammed bin Rashid Al Maktoum, as well as in The Executive Council of Dubai, and has played a crucial part in strategic planning and policy making for the government of Dubai.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>

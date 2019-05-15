@@ -61,6 +61,140 @@
   	$(this).parent().find("svg").removeClass("show");
   })
 
+  /* Team */
+  $('.owl-core').owlCarousel({
+    responsiveClass:true,
+    margin:20,
+    nav:true,
+    navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+    rewind:true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      500:{
+        items:2,
+      },
+      800:{
+        items:3,
+      },
+      1000:{
+        items:4,
+      }
+    }
+  })
+
+ $('.owl-cofounders').owlCarousel({
+      responsiveClass:true,
+      margin:20,
+      nav:true,
+      navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+      rewind:true,
+      responsive:{
+          0:{
+              items:1,
+          },
+          600:{
+              items:2,
+          }
+      }
+  })
+
+  $('.owl-development').owlCarousel({
+    responsiveClass:true,
+    margin:20,
+    nav:true,
+    navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+    rewind:true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      500:{
+        items:2,
+      },
+      800:{
+        items:3,
+      },
+      1000:{
+        items:4,
+      }
+    }
+  })
+
+  $('.owl-community').owlCarousel({
+    responsiveClass:true,
+    margin:20,
+    nav:true,
+    navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+    rewind:true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      500:{
+        items:2,
+      },
+      800:{
+        items:3,
+      },
+      1000:{
+        items:4,
+      }
+    }
+  })
+
+ $('.owl-marketing').owlCarousel({
+      responsiveClass:true,
+      margin:20,
+      nav:true,
+      navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+      rewind:true,
+      responsive:{
+          0:{
+              items:1,
+          },
+          600:{
+              items:2,
+          }
+      }
+  })
+
+ $('.owl-hr').owlCarousel({
+      responsiveClass:true,
+      margin:20,
+      nav:true,
+      navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+      rewind:true,
+      responsive:{
+          0:{
+              items:1,
+          }
+      }
+  })
+
+  $('.owl-advisors').owlCarousel({
+    responsiveClass:true,
+    margin:20,
+    nav:true,
+    navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+    rewind:true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      500:{
+        items:2,
+      },
+      800:{
+        items:3,
+      },
+      1000:{
+        items:4,
+      }
+    }
+  })
+
   /* Partners */
   $('.owl-partners').owlCarousel({
     responsiveClass:true,
