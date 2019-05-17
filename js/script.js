@@ -84,20 +84,20 @@
     }
   })
 
- $('.owl-cofounders').owlCarousel({
-      responsiveClass:true,
-      margin:20,
-      nav:true,
-      navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
-      rewind:true,
-      responsive:{
-          0:{
-              items:1,
-          },
-          600:{
-              items:2,
-          }
+  $('.owl-cofounders').owlCarousel({
+    responsiveClass:true,
+    margin:20,
+    nav:true,
+    navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+    rewind:true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      600:{
+        items:2,
       }
+    }
   })
 
   $('.owl-development').owlCarousel({
@@ -144,33 +144,33 @@
     }
   })
 
- $('.owl-marketing').owlCarousel({
-      responsiveClass:true,
-      margin:20,
-      nav:true,
-      navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
-      rewind:true,
-      responsive:{
-          0:{
-              items:1,
-          },
-          600:{
-              items:2,
-          }
+  $('.owl-marketing').owlCarousel({
+    responsiveClass:true,
+    margin:20,
+    nav:true,
+    navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+    rewind:true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      600:{
+        items:2,
       }
+    }
   })
 
- $('.owl-hr').owlCarousel({
-      responsiveClass:true,
-      margin:20,
-      nav:true,
-      navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
-      rewind:true,
-      responsive:{
-          0:{
-              items:1,
-          }
+  $('.owl-hr').owlCarousel({
+    responsiveClass:true,
+    margin:20,
+    nav:true,
+    navText: ['<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="460,530.874 1,265.87 460,0.866 "/></svg>', '<svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460.5 531.74"><polygon points="0.5,0.866 459.5,265.87 0.5,530.874 "/></svg>'],
+    rewind:true,
+    responsive:{
+      0:{
+        items:1,
       }
+    }
   })
 
   $('.owl-advisors').owlCarousel({
@@ -218,5 +218,12 @@
       }
     }
   })
+
+  /* Disable Parallax on devices */
+  var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+  if (ismobile){
+    $('#call-to-action').css('background-attachment','scroll');
+    $('#newsletter').css('background-attachment','scroll');
+  }
 
 })(jQuery); // End of use strict
