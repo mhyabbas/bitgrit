@@ -456,9 +456,9 @@
 
  /* Why bitgrit */
 
- .video-wrapper {
+ /*.video-wrapper {
  	position: relative;
- }
+ }*/
 
  .video-wrapper img {
  	position: absolute;
