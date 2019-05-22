@@ -45,6 +45,7 @@
  }
 
  header {
+ 	position: relative;
  	height: 700px;
  	background-image: url('../img/graphic bg alt.png');
  	background-repeat: no-repeat;
@@ -116,11 +117,6 @@
  section {
  	padding: 90px 0;
  }
-
-/* .container {
- 	position: relative;
- 	z-index: 1;
- }*/
 
  h1, h2, h3, h4, h5, h6 {
  	font-family: ''gt_walsheim_probold'', 'Roboto', sans-serif;
@@ -455,10 +451,6 @@
  }
 
  /* Why bitgrit */
-
- /*.video-wrapper {
- 	position: relative;
- }*/
 
  .video-wrapper img {
  	position: absolute;
