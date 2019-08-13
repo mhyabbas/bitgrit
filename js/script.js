@@ -3,62 +3,76 @@
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-  	if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-  		var target = $(this.hash);
-  		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-  		if (target.length) {
-  			$('html, body').animate({
-  				scrollTop: (target.offset().top - 54)
-  			}, 1000, "easeInOutExpo");
-  			return false;
-  		}
-  	}
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 54)
+        }, 1000, "easeInOutExpo");
+        return false;
+      }
+    }
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
-  	$('.navbar-collapse').collapse('hide');
-  	$(".navbar-toggler .line1").removeClass("open1");
-  	$(".navbar-toggler .line2").removeClass("open2");
-  	$(".navbar-toggler .line3").removeClass("open3");
+    $("#navbarResponsive").removeClass('show');
+    $("#burger .ham").removeClass("show");
+    $("#burger .line").removeClass("show");
   });
 
-  // Nav burger menu
-  $(".navbar-toggler").click(function(){
-  	$(".line1").toggleClass("open1");
-  	$(".line2").toggleClass("open2");
-  	$(".line3").toggleClass("open3");
-  });
+  // Burger menu
+  $('#navbarResponsive').on('show.bs.collapse', function () {
+    $("#burger .ham").addClass("show");
+    $("#burger .line").addClass("show");
+  })
+
+  $('#navbarResponsive').on('hide.bs.collapse', function () {
+    $("#burger .ham").removeClass("show");
+    $("#burger .line").removeClass("show");
+  })
 
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
-  	target: '#mainNav',
-  	offset: 84
+    target: '#mainNav',
+    offset: 54
   });
 
-  // Collapse Navbar
-  var navbarCollapse = function() {
-    if ($("#mainNav").offset().top > 100) {
+  // Add nav background on scroll
+  var navbarBg = function() {
+    if ($("#mainNav").offset().top > 150) {
       $("#mainNav").addClass("show");
     } else {
       $("#mainNav").removeClass("show");
     }
   };
-  // Collapse now if page is not at top
-  navbarCollapse();
-  // Collapse the navbar when page is scrolled
-  $(window).scroll(navbarCollapse);
 
-  /* FAQ */
+  navbarBg();
+  $(window).scroll(navbarBg);
 
-  $('.collapse').on('show.bs.collapse', function () {
-  	$(this).parent().addClass("show");
-  	$(this).parent().find("svg").addClass("show");
-  })
-
-  $('.collapse').on('hide.bs.collapse', function () {
-  	$(this).parent().removeClass("show");
-  	$(this).parent().find("svg").removeClass("show");
+  /* Technology */
+  $('.owl-technology').owlCarousel({
+    responsiveClass:true,
+    margin:10,
+    rewind:true,
+    responsive:{
+      0:{
+        items:1,
+      },
+      500:{
+        items:2,
+      },
+      600:{
+        items:3,
+      },
+      800:{
+        items:4,
+      },
+      1000:{
+        items:6,
+      }
+    }
   })
 
   /* Team */
@@ -153,9 +167,6 @@
     responsive:{
       0:{
         items:1,
-      },
-      600:{
-        items:2,
       }
     }
   })
