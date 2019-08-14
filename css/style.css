@@ -452,6 +452,11 @@
  	fill: white;
  }
 
+ header #wdsf-link {
+ 	display: flex;
+  	text-decoration: none;
+ }
+
  /* Vision */
 
  #vision {
