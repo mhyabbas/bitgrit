@@ -33,6 +33,9 @@ form ::-ms-input-placeholder { /* Microsoft Edge */
 
 form .btn {
 	cursor: pointer;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 @media all and (min-width: 1200px) {
