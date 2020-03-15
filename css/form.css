@@ -11,6 +11,9 @@ form input {
 	color: #B2BBC6;
 	font-family: 'Nunito', sans-serif;
 	font-size: 16px;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 form input[type='email'] {
@@ -33,9 +36,6 @@ form ::-ms-input-placeholder { /* Microsoft Edge */
 
 form .btn {
 	cursor: pointer;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
 }
 
 @media all and (min-width: 1200px) {
