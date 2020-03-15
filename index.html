@@ -1,1723 +1,222 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="favicon.ico">
-	<title>bitgrit - A Democratic AI Solution</title>
-	<meta name="description" content="bitgrit brings together a decentralized platform for data scientists and organizations in need of AI systems, using blockchain technology.">
-	<meta name="keywords" content="AI, blockchain, decentralized ecosystem, data scientists">
-	<meta property="og:title" content="bitgrit - A Democratic AI Solution"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="https://www.bitgrit.net/"/>
-	<meta property="og:url" content="bitgrit"/>
-	<meta property="og:description" content="bitgrit brings together a decentralized platform for data scientists and organizations in need of AI systems, using blockchain technology."/>
-	<meta property="og:image" content=""/>
-	<link rel="canonical" href=""/>
-
-	<!-- Bootstrap core CSS -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-
-	<!-- Owl Stylesheets -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Overpass:200,400,400i,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
-
-	<!-- Custom styles for this template -->
-	<link href="css/style.css" rel="stylesheet">
-
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-129181025-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-129181025-2');
-	</script>
-
-</head>
-
-<body id="page-top">
-
-	<svg style="display: none;">
-		<symbol id="linkedin" viewBox="0 0 14 14">
-		    <title>LinkedIn</title>
-			<path d="M12.7,0H1.3C0.6,0,0,0.6,0,1.3v11.5C0,13.4,0.6,14,1.3,14h11.5c0.7,0,1.3-0.6,1.3-1.3V1.3
-				C14,0.6,13.4,0,12.7,0z M4.3,12.1c0,0.2-0.2,0.4-0.4,0.4H2.4c-0.2,0-0.4-0.2-0.4-0.4V5.5c0-0.2,0.2-0.4,0.4-0.4H4
-				c0.2,0,0.4,0.2,0.4,0.4V12.1z M3.2,4.5C2.4,4.5,1.7,3.9,1.7,3s0.7-1.5,1.5-1.5S4.7,2.2,4.7,3S4,4.5,3.2,4.5z M12.5,12.1
-				c0,0.2-0.2,0.3-0.3,0.3h-1.7c-0.2,0-0.3-0.2-0.3-0.3V9c0-0.5,0.1-2-1.2-2c-1,0-1.2,1.1-1.3,1.5v3.6c0,0.2-0.2,0.3-0.3,0.3H5.7
-				c-0.2,0-0.3-0.2-0.3-0.3V5.5c0-0.2,0.2-0.3,0.3-0.3h1.6c0.2,0,0.3,0.2,0.3,0.3v0.6c0.4-0.6,1-1,2.2-1c2.7,0,2.7,2.5,2.7,3.9V12.1
-				L12.5,12.1z"/>
-		</symbol>
-
-		<symbol id="info" viewBox="0 0 20 20">
-			<title>Info</title>
-			<path d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM10.896 3.866c0.936 0 1.211 0.543 1.211 1.164 0 0.775-0.62 1.492-1.679 1.492-0.886 0-1.308-0.445-1.282-1.182 0-0.621 0.519-1.474 1.75-1.474zM8.498 15.75c-0.64 0-1.107-0.389-0.66-2.094l0.733-3.025c0.127-0.484 0.148-0.678 0-0.678-0.191 0-1.022 0.334-1.512 0.664l-0.319-0.523c1.555-1.299 3.343-2.061 4.108-2.061 0.64 0 0.746 0.756 0.427 1.92l-0.84 3.18c-0.149 0.562-0.085 0.756 0.064 0.756 0.192 0 0.82-0.232 1.438-0.719l0.362 0.486c-1.513 1.512-3.162 2.094-3.801 2.094z"></path>
-		</symbol>
-	</svg>
-
-	<!-- Navigation -->
-	<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-		<div class="container">
-			<a class="navbar-brand js-scroll-trigger" href="#page-top">
-			<svg class="align-middle mr-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	       viewBox="0 0 301.44 345.35" xml:space="preserve" fill="white">
-				<path d="M99.31,343.22c43.12-73.78,86.24-147.56,130.04-222.49c23.78,20.27,46.96,40.03,71.31,60.78
-	       c-67.02,54.65-133.56,108.9-200.1,163.15C100.14,344.18,99.73,343.7,99.31,343.22z"/>
-				<path d="M31.47,273c49.66-36.72,99.32-73.43,150.8-111.49c-1.79,3.74-2.56,5.69-3.61,7.47
-	       c-12.8,21.89-25.59,43.79-38.56,65.58c-1.39,2.34-3.58,5-5.98,5.82c-33.87,11.54-67.84,22.79-101.79,34.12
-	       C32.05,274,31.76,273.5,31.47,273z"/>
-				<path d="M133.64,172.91C89.17,138.22,44.91,103.7,0.66,69.18c0.2-0.34,0.4-0.67,0.61-1.01
-	       c64.32,19.62,128.64,39.25,194.48,59.33C174.38,143.12,154.22,157.86,133.64,172.91z"/>
-				<path d="M88.33,0.68c41.88,35.8,83.76,71.6,125.64,107.39c-0.37,0.76-0.73,1.51-1.1,2.27
-	       c-1.75,0-3.63,0.42-5.24-0.06c-22.86-6.89-45.7-13.85-68.48-20.96c-2.33-0.73-5.24-2.05-6.32-3.98
-	       c-15.51-27.61-30.76-55.37-46.07-83.09C87.28,1.73,87.8,1.2,88.33,0.68z"/>
-			</svg>
-			<span class="logo-text align-middle">bitgrit</span>
-			</a>
-
-		    <button id="burger" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-		      <svg class="ham" viewBox="0 0 100 100" width="60">
-		        <path class="line top" d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-		        <path class="line middle" d="m 30,50 h 40" />
-		        <path class="line bottom" d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-		      </svg>
-		    </button>
-
-			<div class="collapse navbar-collapse" id="navbarResponsive">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item mx-2"> <a class="nav-link js-scroll-trigger" href="#vision">Vision</a> </li>
-					<li class="nav-item mx-2"> <a class="nav-link js-scroll-trigger" href="#what-we-do">What We Do</a> </li>
-					<li class="nav-item mx-2"> <a class="nav-link js-scroll-trigger" href="#technology">Technology</a> </li>
-					<li class="nav-item mx-2"> <a class="nav-link js-scroll-trigger" href="#team">Team</a> </li>
-					<li class="nav-item mx-2"> <a class="nav-link js-scroll-trigger" href="#partners">Partners</a> </li>
-					<li class="nav-item mx-2"> <a class="nav-link js-scroll-trigger" href="#news">News</a> </li>
-					<li class="nav-item my-auto"> <a class="nav-link btn btn-secondary" href="https://competition.bitgrit.net/" target="_blank">Get Started</a> </li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<!-- Header -->
-	<header id="header p-0">
-		<div class="container">
-			<div class="row tagline">
-				<div class="col-12">
-					<p class="text-muted mb-0">An ecosystem of</p>
-					<h1 class="mb-3">Data Scientists,<br>
-					by Data Scientists,<br>
-					for Data Scientists.</h1>
-					<div class="row">
-						<div class="col-8 col-12">
-							<a class="btn btn-white mr-2 mb-2 mb-sm-3" href="https://competition.bitgrit.net/" target="_blank">Get Started</a>
-							<a class="btn btn-secondary mb-2 mb-sm-3" href="mailto:info@bitgrit.net">Contact Us</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row pb-3">
-				<div class="col-md-4 d-flex mb-3">
-					<div class="card flex-fill p-2">
-						<div class="card-overlay"></div>
-						<div class="card-body">
-							<svg class="mb-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								viewBox="0 0 54 60">
-								<title>Companies</title>
-								<path d="M53,58h-1.7V5.1c0-0.6-0.4-1-1-1H31.7c-0.6,0-1,0.5-1,1v4.4h-2V5.1c0-0.6-0.4-1-1-1h-4.3V1
-									c0-0.6-0.4-1-1-1s-1,0.5-1,1v3H17c-0.6,0-1,0.5-1,1v4.4h-3c-0.6,0-1,0.5-1,1v8.4H3.7c-0.6,0-1,0.5-1,1V58H1c-0.6,0-1,0.5-1,1
-									c0,0.6,0.4,1,1,1h52c0.6,0,1-0.5,1-1S53.6,58,53,58z M18,6.1h8.7v3.4H18V6.1z M14.7,58H14h-2h-0.7v-3.4h3.3L14.7,58L14.7,58z
-									M21.3,32v1.7V58h-4.7v-4.4c0-0.6-0.4-1-1-1h-5.3c-0.6,0-1,0.5-1,1V58H4.7V20.9h16.7V32H21.3z M22.3,18.9H14v-7.4h16.7V31h-7.3v-3.4
-									h3c0.6,0,1-0.5,1-1c0-0.6-0.4-1-1-1h-3v-3.4h3c0.6,0,1-0.5,1-1c0-0.6-0.4-1-1-1h-3v-0.3C23.3,19.3,22.9,18.9,22.3,18.9z M40,58H23.3
-									V33.8V33H40V58z M49.3,58H42V32v-1.3c0-0.6-0.4-1-1-1s-1,0.5-1,1V31h-2v-0.3c0-0.6-0.4-1-1-1s-1,0.5-1,1V31h-3.3V10.4V6.1h16.7V58
-									H49.3z"/>
-								<path d="M30,56c0.6,0,1-0.5,1-1V36c0-0.6-0.4-1-1-1s-1,0.5-1,1v19C29,55.5,29.4,56,30,56z"/>
-								<path d="M34,56c0.6,0,1-0.5,1-1V36c0-0.6-0.4-1-1-1s-1,0.5-1,1v19C33,55.5,33.4,56,34,56z"/>
-								<path d="M37,13c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C36,12.6,36.4,13,37,13z"/>
-								<path d="M45,13c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-8,0-8,0v3C37,13,44.4,13,45,13z"/>
-								<path d="M37,19c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C36,18.6,36.4,19,37,19z"/>
-								<path d="M41,19c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C40,18.6,40.4,19,41,19z"/>
-								<path d="M45,19c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C44,18.6,44.4,19,45,19z"/>
-								<path d="M37,26c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C36,25.6,36.4,26,37,26z"/>
-								<path d="M41,26c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C40,25.6,40.4,26,41,26z"/>
-								<path d="M45,26c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C44,25.6,44.4,26,45,26z"/>
-								<path d="M9,29c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C8,28.6,8.4,29,9,29z"/>
-								<path d="M13,29c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C12,28.6,12.4,29,13,29z"/>
-								<path d="M17,29c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C16,28.6,16.4,29,17,29z"/>
-								<path d="M9,35c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C8,34.6,8.4,35,9,35z"/>
-								<path d="M13,35c2.2,0,4,0,4,0v-3c0,0-1.8,0-4,0s-4,0-4,0v3C9,35,10.8,35,13,35z"/>
-								<path d="M17,35c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C16,34.6,16.4,35,17,35z"/>
-								<path d="M9,49c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C8,48.6,8.4,49,9,49z"/>
-								<path d="M13,49c2.2,0,4,0,4,0v-3c0,0-1.8,0-4,0s-4,0-4,0v3C9,49,10.8,49,13,49z"/>
-								<path d="M17,49c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C16,48.6,16.4,49,17,49z"/>
-								<path d="M9,42c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C8,41.6,8.4,42,9,42z"/>
-								<path d="M13,42c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C12,41.6,12.4,42,13,42z"/>
-								<path d="M17,42c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C16,41.6,16.4,42,17,42z"/>
-								<path d="M45,33c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C44,32.6,44.4,33,45,33z"/>
-								<path d="M45,40c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C44,39.6,44.4,40,45,40z"/>
-								<path d="M45,46c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C44,45.6,44.4,46,45,46z"/>
-								<path d="M45,53c0.6,0,1-0.4,1-0.9v-1.2c0-0.5-0.4-0.9-1-0.9s-1,0.4-1,0.9v1.2C44,52.6,44.4,53,45,53z"/>
-								<path d="M27,16c0-0.6-0.4-1-0.9-1h-7.2c-0.5,0-0.9,0.4-0.9,1s0.4,1,0.9,1h7.2C26.6,17,27,16.6,27,16z"/>
-							</svg>
-							<h3 class="mb-1">Companies</h3>
-							<p class="text-muted mb-0">Quality talent data scientists.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex mb-3">
-					<div class="card flex-fill p-2">
-						<div class="card-overlay"></div>
-						<div class="card-body">
-							<svg class="mb-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								 viewBox="0 0 54 54">
-								<title>Data Scientists</title>
-								<path d="M50.5,11c-1.9,0-3.5,1.6-3.5,3.5s1.6,3.5,3.5,3.5s3.5-1.6,3.5-3.5S52.4,11,50.5,11z M50.5,16.3
-									c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8C52.2,15.5,51.5,16.3,50.5,16.3z"/>
-								<path d="M48.5,11.5l-8.1-3.4c-0.5-0.2-1,0-1.3,0.4c-0.2,0.4,0,0.9,0.4,1.1l8.1,3.4c0.1,0.1,0.3,0.1,0.4,0.1
-									c0.4,0,0.7-0.2,0.8-0.5C49.1,12.1,48.9,11.7,48.5,11.5z"/>
-								<path d="M41.5,47c-1.9,0-3.5,1.6-3.5,3.5s1.6,3.5,3.5,3.5s3.5-1.6,3.5-3.5S43.4,47,41.5,47z M41.5,52.2
-									c-1,0-1.8-0.8-1.8-1.8s0.8-1.7,1.8-1.7s1.8,0.8,1.8,1.8S42.5,52.2,41.5,52.2z"/>
-								<path d="M39.5,48.5l-8.1-3.4c-0.5-0.2-1,0-1.3,0.4c-0.2,0.4,0,0.9,0.4,1.1l8.1,3.4c0.1,0.1,0.3,0.1,0.4,0.1
-									c0.4,0,0.7-0.2,0.8-0.5C40.1,49.1,39.9,48.7,39.5,48.5z"/>
-								<path d="M27.5,24c-1.9,0-3.5,1.6-3.5,3.5s1.6,3.5,3.5,3.5s3.5-1.6,3.5-3.5S29.4,24,27.5,24z M27.5,29.3
-									c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8S28.5,29.3,27.5,29.3z"/>
-								<path d="M25.6,26.3l-6.1-5c-0.4-0.3-1-0.3-1.3,0.2c-0.3,0.4-0.2,1,0.2,1.4l6.1,5c0.2,0.1,0.4,0.2,0.6,0.2
-									c0.3,0,0.5-0.1,0.7-0.4C26.1,27.2,26,26.6,25.6,26.3z"/>
-								<path d="M43,23c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S48.5,23,43,23z M43,41.2c-4.5,0-8.2-3.7-8.2-8.2
-									s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S47.5,41.2,43,41.2z"/>
-								<path d="M43.5,27c-1.9,0-3.5,1.6-3.5,3.5c0,1.9,1.6,3.5,3.5,3.5s3.5-1.6,3.5-3.5S45.4,27,43.5,27z M43.5,32.3
-									c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8S44.5,32.3,43.5,32.3z"/>
-								<path d="M46.2,36h-5.3c-1.6,0-2.8,1.2-2.8,2.6v2.3c0,0.3,0.2,0.6,0.5,0.8c1.5,0.8,3.3,1.3,5,1.3s3.5-0.4,5-1.3
-									c0.3-0.2,0.5-0.4,0.5-0.8v-2.3C49,37.2,47.7,36,46.2,36z M47.2,40.4c-2.3,1.1-5.1,1.1-7.3,0v-1.8c0-0.5,0.5-0.9,1-0.9h5.3
-									c0.6,0,1,0.4,1,0.9V40.4L47.2,40.4z"/>
-								<path d="M21,34c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S26.5,34,21,34z M21,52.2c-4.5,0-8.2-3.7-8.2-8.2
-									s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S25.5,52.2,21,52.2z"/>
-								<path d="M21.5,38c-1.9,0-3.5,1.6-3.5,3.5s1.6,3.5,3.5,3.5s3.5-1.6,3.5-3.5S23.4,38,21.5,38z M21.5,43.3
-									c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8S22.5,43.3,21.5,43.3z"/>
-								<path d="M24.2,47h-5.3c-1.6,0-2.8,1.2-2.8,2.6v2.3c0,0.3,0.2,0.6,0.5,0.8c1.5,0.8,3.3,1.3,5,1.3s3.5-0.4,5-1.3
-									c0.3-0.2,0.5-0.4,0.5-0.8v-2.3C27,48.2,25.7,47,24.2,47z M25.2,51.4c-2.3,1.1-5.1,1.1-7.3,0v-1.8c0-0.5,0.5-0.9,1-0.9h5.3
-									c0.6,0,1,0.4,1,0.9V51.4L25.2,51.4z"/>
-								<path d="M10,11C4.5,11,0,15.5,0,21s4.5,10,10,10s10-4.5,10-10S15.5,11,10,11z M10,29.2c-4.5,0-8.2-3.7-8.2-8.2
-									s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S14.5,29.2,10,29.2z"/>
-								<path d="M9.5,15C7.6,15,6,16.6,6,18.5S7.6,22,9.5,22s3.5-1.6,3.5-3.5S11.4,15,9.5,15z M9.5,20.3c-1,0-1.8-0.8-1.8-1.8
-									s0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8S10.5,20.3,9.5,20.3z"/>
-								<path d="M12.2,24H6.8C5.3,24,4,25.2,4,26.6v2.3c0,0.3,0.2,0.6,0.5,0.8C6,30.6,7.7,31,9.5,31s3.5-0.4,5-1.3
-									c0.3-0.2,0.5-0.4,0.5-0.8v-2.3C15,25.2,13.7,24,12.2,24z M13.2,28.4c-2.3,1.1-5.1,1.1-7.3,0v-1.8c0-0.5,0.5-0.9,1-0.9h5.3
-									c0.6,0,1,0.4,1,0.9V28.4L13.2,28.4z"/>
-								<path d="M31,0c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S36.5,0,31,0z M31,18.2c-4.5,0-8.2-3.7-8.2-8.2
-									s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S35.5,18.2,31,18.2z"/>
-								<path d="M31.5,4C29.6,4,28,5.6,28,7.5s1.6,3.5,3.5,3.5c1.9,0,3.5-1.6,3.5-3.5S33.4,4,31.5,4z M31.5,9.3
-									c-1,0-1.8-0.8-1.8-1.8s0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8C33.2,8.5,32.5,9.3,31.5,9.3z"/>
-								<path d="M34.2,13h-5.3c-1.6,0-2.8,1.2-2.8,2.6v2.3c0,0.3,0.2,0.6,0.5,0.8c1.5,0.8,3.3,1.3,5,1.3c1.8,0,3.5-0.4,5-1.3
-									c0.3-0.2,0.5-0.4,0.5-0.8v-2.3C37,14.2,35.7,13,34.2,13z M35.2,17.4c-2.3,1.1-5.1,1.1-7.3,0v-1.8c0-0.5,0.5-0.9,1-0.9h5.3
-									c0.6,0,1,0.4,1,0.9V17.4L35.2,17.4z"/>
-								<path d="M22.8,9.3c-0.3-0.4-0.9-0.4-1.3-0.1l-6.2,5.2c-0.4,0.3-0.4,0.9-0.1,1.2c0.2,0.2,0.4,0.3,0.7,0.3
-									c0.2,0,0.4-0.1,0.6-0.2l6.2-5.2C23.1,10.2,23.1,9.7,22.8,9.3z"/>
-								<path d="M42.8,23.6l-5.3-7.2c-0.3-0.4-0.8-0.5-1.2-0.2s-0.5,0.9-0.2,1.3l5.3,7.2c0.2,0.2,0.4,0.4,0.7,0.4
-									c0.2,0,0.4-0.1,0.5-0.2C43,24.5,43.1,24,42.8,23.6z"/>
-								<path d="M35.8,36.3c-0.3-0.4-0.9-0.4-1.3-0.2l-5.2,3.4c-0.4,0.3-0.5,0.8-0.2,1.1c0.2,0.2,0.5,0.3,0.7,0.3
-									s0.4-0.1,0.6-0.2l5.2-3.4C36,37.2,36.1,36.7,35.8,36.3z"/>
-								<path d="M9.5,0C7.6,0,6,1.6,6,3.5S7.6,7,9.5,7S13,5.4,13,3.5S11.4,0,9.5,0z M9.5,5.3c-1,0-1.8-0.8-1.8-1.8
-									s0.8-1.8,1.8-1.8s1.8,0.8,1.8,1.8S10.5,5.3,9.5,5.3z"/>
-								<path d="M10,5C9.4,5,9,5.4,9,5.9v6.2c0,0.5,0.4,0.9,1,0.9s1-0.4,1-0.9V5.9C11,5.4,10.6,5,10,5z"/>
-							</svg>
-							<h3 class="mb-1">Data Scientists</h3>
-							<p class="text-muted mb-0">Explore new opportunities.</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4 d-flex mb-3">
-					<a id="wdsf-link" class="flex-fill" href="https://worlddsf.org/" target="_blank">
-						<div class="card flex-fill p-2">
-							<div class="card-overlay"></div>
-							<div class="card-body">
-								<svg class="mb-3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-									 viewBox="0 0 55 55">
-									<title>WDSF</title>
-									<path d="M54.9,25.4c0-0.1,0.1-0.2,0.1-0.3c0-0.1,0-0.2,0-0.3l-0.1-0.2c-0.7-7.2-4.3-13.9-10-18.5
-										c-0.4-0.3-0.8-0.6-1.2-0.9c0,0,0,0-0.1-0.1c0,0,0,0-0.1,0C38.8,1.8,33.2,0,27.5,0c-0.2,0-0.5,0-0.7,0c-3.1,0.1-6.1,0.6-9,1.7
-										C15.4-0.2,12-0.5,9.2,0.8S4.5,5.1,4.5,8.3c0.1,1.1,0.3,2.1,0.7,3c-0.9,1.3-1.8,2.6-2.5,4.1c0,0,0,0,0,0.1
-										c-6.5,13.5-1.1,29.7,12.2,36.5c13.3,6.8,29.6,1.8,36.8-11.3c2-3.6,3.1-7.6,3.3-11.7c0-0.4,0-0.9,0-1.3C55,26.8,55,26.1,54.9,25.4z
-										 M52.2,20.7c-0.1-0.1-0.2-0.2-0.3-0.3c-1.2-0.9-2.6-1.6-4-2c-1.3-0.3-2.7-0.3-4,0c-1.1,0.3-2.3,0.3-3.4,0c-2.2-0.5-3.9-0.9-4.8-2.3
-										c-1.3-2.1-0.7-5.1,0.7-6.1c0.5-0.3,1-0.4,1.6-0.3c1,0.1,2-0.1,2.8-0.5c1-0.4,1.8-1.1,2.5-1.9c0.2,0.1,0.4,0.3,0.5,0.4
-										C47.8,11,50.8,15.6,52.2,20.7z M12.8,1.8c3.5,0,6.4,2.9,6.4,6.4c0,2.7-4.1,9-6.4,12.2c-2.2-3-4.1-6.1-5.7-9.4
-										c-0.4-0.9-0.7-1.8-0.8-2.8C6.4,4.7,9.2,1.8,12.8,1.8z M1.8,27.6c0-1.7,0.2-3.4,0.5-5.1c0.1,1.3,0.3,2.4,0.4,3.4
-										c0.6,3.8,1.1,7.3,3.9,10.6c1.2,1.4,3.1,3.7,6.1,4c3,0.3,6.8-1.4,7.8-1.9l0.4-0.2c0.6-0.4,1.2-0.6,1.9-0.6c1.2,0.1,2.2,0.7,3,1.5
-										c1.6,1.7,2,4.6,0.9,6.2c-0.4,0.5-0.8,0.8-1.4,1c-1,0.3-1.8,1-2.3,1.8c-0.8,1.4-0.9,3.1-0.4,4.6C10.5,50.5,1.8,39.9,1.8,27.6z
-										 M27.5,53.3c-0.9,0-1.8,0-2.7-0.1c-0.1-0.1-0.1-0.2-0.2-0.3c-0.6-1.1-0.6-2.5,0-3.7c0.3-0.5,0.8-0.9,1.4-1.1
-										c0.9-0.3,1.6-0.9,2.2-1.6c1.6-2.2,1.1-6.1-1-8.5c-1.1-1.3-2.7-2-4.3-2.1h0c-1,0-1.9,0.3-2.7,0.8l-0.4,0.2c-2,1-4.9,2-6.8,1.7
-										C10.6,38.3,9,36.5,8,35.2c-2.4-2.8-2.9-6-3.5-9.6c-0.6-3.1-0.6-6.3-0.1-9.4c0.5-1,1-2,1.7-2.9c0,0.1,0.1,0.1,0.1,0.2
-										c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.1,0.1,0.2,0.2,0.4C7,14.8,7.1,15,7.2,15.2c0.1,0.1,0.1,0.2,0.2,0.3
-										c0.1,0.2,0.2,0.3,0.3,0.5c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.2,0.2,0.4,0.3,0.5c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.2,0.3,0.4,0.4,0.6
-										c0,0.1,0.1,0.1,0.1,0.2c0.2,0.3,0.3,0.5,0.5,0.8c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.2,0.2,0.3,0.3,0.4l0.2,0.3c0.1,0.1,0.2,0.2,0.2,0.3
-										l0.2,0.3c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.1,0.1,0.2,0.2,0.3c0.1,0.1,0.1,0.2,0.2,0.2l0.2,0.3l0.1,0.2l0.1,0.2l0.1,0.2l0.1,0.2
-										l0.1,0.1c0.1,0.1,0.1,0.2,0.2,0.2c0.2,0.2,0.4,0.4,0.7,0.4s0.6-0.1,0.7-0.4c0.8-1,7.5-10.1,7.5-14.3c0-0.3,0-0.5,0-0.8
-										c0-0.1,0-0.2,0-0.2c0-0.2-0.1-0.4-0.1-0.6c0-0.1,0-0.2-0.1-0.3c0-0.2-0.1-0.4-0.1-0.6c0-0.1,0-0.1-0.1-0.2c-0.1-0.2-0.2-0.5-0.3-0.7
-										c0,0,0-0.1-0.1-0.1c-0.1-0.2-0.2-0.4-0.3-0.6c0-0.1-0.1-0.2-0.1-0.2c-0.1-0.1-0.2-0.3-0.3-0.4c-0.1-0.1-0.1-0.2-0.2-0.2
-										c0,0-0.1-0.1-0.1-0.1c1.9-0.6,3.9-1.1,5.9-1.2c-1.4,2.7-1.9,5.2-1.4,7.4c0.4,1.5,1.2,2.9,2.2,4c0.9,1.1,1.5,1.8,1.4,3.1
-										c-0.1,2.7-3.1,4.9-4.2,5.7c-1.5,1.1-3.2,1.9-4.9,2.4c-1.7,0.5-3.1,1-3.7,2.7c-0.5,2.2,0.3,4.4,2.2,5.7c1.1,0.6,2.4,0.7,3.7,0.3
-										c1.3-0.3,2.7-0.4,4-0.2c1.7,0.2,3.2,0.5,4,1.5c0.4,0.6,0.4,1.2,0.3,2.3c-0.2,1.6,0,3.2,0.5,4.8c0.4,1.3,1.1,3.2,2.6,3.4
-										c0.1,0,0.2,0,0.3,0c1.1,0,1.7-0.9,2.4-1.9c0.3-0.4,0.6-0.9,1-1.4c1.9,3.1,3.8,5.6,3.9,5.7c0.2,0.2,0.4,0.4,0.7,0.4
-										c0.3,0,0.6-0.1,0.7-0.4c2-2.7,3.8-5.5,5.4-8.4c1.1,0.3,2.2,0.8,3.2,1.5C45.1,48.4,36.6,53.3,27.5,53.3L27.5,53.3z M44.6,28.3
-										c1.4,1.2,2.1,3,2.1,4.8c0,0.7-0.3,2-1.5,4.5c-1.5,2.7-3.1,5.3-4.9,7.8c-0.9-1.2-2.3-3.3-3.7-5.6c-0.7-1.2-1.4-2.5-2-3.8
-										C34.2,35,34,34,33.9,33.1c0-3.5,2.9-6.4,6.4-6.4c0.2,0,0.4,0,0.6,0C42.3,26.8,43.6,27.4,44.6,28.3L44.6,28.3z M53.1,28.8
-										c-0.2,3.5-1,6.9-2.6,10.1c-1-0.6-2.1-1.1-3.2-1.5c0.7-1.3,1.1-2.8,1.3-4.3c0-3.2-1.8-6-4.6-7.4l-0.1,0c-0.2-0.1-0.4-0.2-0.6-0.3
-										c-0.1-0.1-0.3-0.1-0.4-0.1c-0.1,0-0.2-0.1-0.3-0.1c-0.2-0.1-0.5-0.1-0.7-0.2h0c-0.1,0-0.3,0-0.4-0.1c-2.4-0.3-4.7,0.4-6.5,2
-										c-1.8,1.6-2.8,3.8-2.8,6.2c0.1,1.2,0.4,2.4,0.9,3.5c0.5,1.2,1.1,2.3,1.7,3.4c-0.6,0.6-1.1,1.3-1.6,2c-0.3,0.4-0.6,0.8-0.9,1.2
-										c-0.2,0-0.5-0.4-1.1-2.1c-0.4-1.3-0.6-2.7-0.4-4c0.2-1.2,0-2.5-0.7-3.5c-1.2-1.6-3.2-1.9-5.2-2.2c-1.5-0.2-3.1-0.1-4.6,0.2
-										c-1.2,0.2-1.7,0.3-2.3-0.1c-1.1-0.8-1.7-2.2-1.4-3.5c0.2-0.7,1-1,2.5-1.5c2-0.6,3.8-1.5,5.5-2.7c1.3-1,4.9-3.6,5-7.1
-										c0.1-1.9-0.9-3.1-1.9-4.3c-0.9-0.9-1.5-2.1-1.8-3.3c-0.5-2,0.1-4.4,1.8-7.1h0.1c5.1,0,10,1.5,14.2,4.3c-0.5,0.5-1.1,1-1.7,1.3
-										c-0.6,0.3-1.3,0.4-2,0.3c-1-0.1-1.9,0.1-2.7,0.7C33.1,10,32.2,14,34,17c1.3,2.1,3.6,2.6,6.1,3.2c1.3,0.3,2.7,0.3,4.1,0
-										c1.1-0.3,2.2-0.3,3.3,0c1.2,0.3,2.3,0.9,3.3,1.7c1,0.9,1.8,2,2.3,3.3c0.1,0.8,0.1,1.6,0.1,2.5C53.2,28,53.2,28.4,53.1,28.8
-										L53.1,28.8z"/>
-									<path d="M12.5,11c1.9,0,3.5-1.8,3.5-4c0-2.2-1.6-4-3.5-4S9,4.8,9,7C9,9.2,10.6,11,12.5,11z M12.5,5c1,0,1.8,0.9,1.8,2
-										s-0.8,2-1.8,2s-1.8-0.9-1.8-2S11.5,5,12.5,5z"/>
-									<path d="M37,32c0,2.2,1.6,4,3.5,4s3.5-1.8,3.5-4c0-2.2-1.6-4-3.5-4S37,29.8,37,32z M42.2,32c0,1.1-0.8,2-1.8,2
-										s-1.8-0.9-1.8-2c0-1.1,0.8-2,1.8-2S42.2,30.9,42.2,32z"/>
-								</svg>
-								<h3 class="mb-1">WDSF</h3>
-								<p class="text-muted mb-0">Culture of open communication.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<!-- Vision -->
-	<section id="vision">
-		<div class="row m-0">
-			<div class="col-sm-7 col-lg-8 py-5 bg-primary text-white">
-				<div class="row h-100">
-					<div class="col-10 col-md-9 mx-auto my-auto">
-						<div class="content-wrapper">
-							<h2 class="heading text-white">Vision</h2>
-							<h2 class="heading-bg-primary">Vision</h2>
-							<p>At bitgrit, we bring together pasionate data scientists from around the world and connect them to companies in need of AI solutions. We are democratizing AI to make it accessible to all developers and firms.</p>
-							<div class="quote-source">
-								<p class="mb-0"><strong>Frederik Bussler</strong></p>
-								<p class="text-muted">CEO</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-sm-5 col-lg-4 vision-img"></div>
-		</div>
-	</section>
-
-	<!-- What We Do -->
-	<section id="what-we-do" class="bg-light">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-md-7">
-					<div class="content-wrapper">
-						<h2 class="heading text-dark">What We Do</h2>
-						<h2 class="heading-bg-muted">What We Do</h2>
-						<p class="mb-0">At present, bitgrit provides two central services:</p>
-						<p>an online community of data scientists and a competition platform where they can submit their AI solutions to companies with data and AI-related needs.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Online Community -->
-	<section id="community">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-md-6 mb-4 text-center">
-					<img class="img-fluid" src="img/community.jpg" alt="community">
-				</div>
-				<div class="col-md-6">
-					<h2>Online Community</h2>
-					<p>Our online community of data scientists enables users to share information regarding datasets and AI training. This open, decentralized platform of communication creates a stronger intellectual community centered around collaboration.</p>
-					<p>To support our community, we host regular events around the world, including the World Data Science Forum.</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Competition -->
-	<section id="competition">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-md-6 mb-4">
-					<h2>Competition Platform</h2>
-					<p>bitgrit's competition platform is where clients share problems requiring AI solutions - and in response, our networks of data scientists delivers valuable algorithms and insights.</p>
-					<p>In the future, we will roll out other functions to further our goal of democratizing AI: an AI marketplace, blockchain integration, job boards, and more.
-				</div>
-				<div class="col-md-6 text-center">
-					<img class="img-fluid" src="img/competition.png" alt="competition">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Technology -->
-	<section id="technology" class="bg-light">
-		<div class="container">
-			<div class="row pb-4">
-				<div class="col-md-7">
-					<div class="content-wrapper">
-						<h2 class="heading text-dark">Technology</h2>
-						<h2 class="heading-bg-muted">Technology</h2>
-						<p>Learn about the tech stack we are using in our competition platform and upcoming AI marketplace.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row pb-4">
-				<div class="owl-technology owl-carousel owl-theme">
-					<div class="card mx-auto bg-white border-0">
-						<img class="img-fluid my-auto" src="img/technology/gcs.png" alt="logo">
-					</div>
-					<div class="card mx-auto bg-white border-0">
-						<img class="img-fluid my-auto" src="img/technology/github.png" alt="logo">
-					</div>
-					<div class="card mx-auto bg-white border-0">
-						<img class="img-fluid my-auto" src="img/technology/aws.png" alt="logo">
-					</div>
-					<div class="card mx-auto bg-white border-0">
-						<img class="img-fluid my-auto" src="img/technology/kubernetes.png" alt="logo">
-					</div>
-					<div class="card mx-auto bg-white border-0">
-						<img class="img-fluid my-auto" src="img/technology/jenkins.png" alt="logo">
-					</div>
-					<div class="card mx-auto bg-white border-0">
-						<img class="img-fluid my-auto" src="img/technology/git.png" alt="logo">
-					</div>
-				</div>
-			</div>
-			<div class="row text-center justify-content-center">
-				<div class="col-md-7">
-					<p class="text-left">You can learn more about how we work and technology we use on our whitepaper below:</p>
-					<a class="btn btn-primary" target="_blank" href="doc/whitepaper.pdf">White Paper</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Team -->
-	<section id="team">
-		<div class="container">
-			<div class="content-wrapper">
-				<h2 class="heading text-dark">Team & Advisors</h2>
-				<h2 class="heading-bg-muted">Team</h2>
-				<p>A perfect blend of creativity and technical wizardry.</p>
-			</div>
-			<ul class="nav nav-pills justify-content-center mb-3" id="pills-tab" role="tablist">
-				<li class="nav-item">
-					<a class="nav-link active" id="pills-core-tab" data-toggle="pill" href="#pills-core" role="tab" aria-controls="pills-core" aria-selected="true">Core team</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="pills-cofounders-tab" data-toggle="pill" href="#pills-cofounders" role="tab" aria-controls="pills-cofounders" aria-selected="false">Co-Founders</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="pills-development-tab" data-toggle="pill" href="#pills-development" role="tab" aria-controls="pills-development" aria-selected="false">Development</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="pills-community-tab" data-toggle="pill" href="#pills-community" role="tab" aria-controls="pills-community" aria-selected="false">Community</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="pills-marketing-tab" data-toggle="pill" href="#pills-marketing" role="tab" aria-controls="pills-marketing" aria-selected="false">Marketing</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="pills-hr-tab" data-toggle="pill" href="#pills-hr" role="tab" aria-controls="pills-hr" aria-selected="false">Human Resources</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" id="pills-advisors-tab" data-toggle="pill" href="#pills-advisors" role="tab" aria-controls="pills-advisors" aria-selected="false">Advisors</a>
-				</li>
-			</ul>
-			<div class="tab-content" id="pills-tabContent">
-				<div class="tab-pane fade show active" id="pills-core" role="tabpanel" aria-labelledby="pills-core-tab">
-					<div class="owl-core owl-carousel owl-theme">
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#frederikModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Frederik.png" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Frederik Bussler</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/frederikbussler/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">CEO</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#ashishModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Ashish.png" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Ashish Malhotra</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/ashish-malhotra-2609344/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Director</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#muktaModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Mukta.png" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Mukta Arora</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/muktaarora/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">CIO</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#yuriaModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Yuria.png" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Yuria Kondo</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/yuria-kondo/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">COO</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#gautamModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Gautam.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Gautam Bajaj</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/d34th4ck3r/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Technical Lead</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="pills-cofounders" role="tabpanel" aria-labelledby="pills-cofounders-tab">
-					<div class="row justify-content-center">
-						<div class="owl-cofounders owl-carousel owl-theme col-lg-7">
-							<div class="card mx-auto">
-								<div class="card-img">
-									<div class="card-img-overlay d-flex align-items-end justify-content-center">
-										<a href="#" data-toggle="modal" data-target="#tetsuroModal">
-					                  		<svg><use xlink:href="#info"></use></svg>
-					                	</a>
-									</div>
-									<img src="img/team/Tetsuro.png" alt="team">
-								</div>
-								<div class="card-body">
-									<h6 class="mb-0">Tetsuro Masunaga</h6>
-									<a class="linkedin" href="https://www.linkedin.com/in/tetsuro-masunaga-12370b62/" target="_blank">
-										<svg><use xlink:href="#linkedin"></use></svg>
-									</a>
-									<p class="text-muted text-uppercase">Founder and Director</p>
-								</div>
-							</div>
-
-							<div class="card mx-auto">
-								<div class="card-img">
-									<div class="card-img-overlay d-flex align-items-end justify-content-center">
-										<a href="#" data-toggle="modal" data-target="#kazuyaModal">
-					                  		<svg><use xlink:href="#info"></use></svg>
-					                	</a>
-									</div>
-									<img src="img/team/Kazuya.png" alt="team">
-								</div>
-								<div class="card-body">
-									<h6 class="mb-0">Kazuya Saginawa</h6>
-									<a class="linkedin" href="https://www.linkedin.com/in/kazuya-saginawa/" target="_blank">
-										<svg><use xlink:href="#linkedin"></use></svg>
-									</a>
-									<p class="text-muted text-uppercase">Co-founder</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="pills-development" role="tabpanel" aria-labelledby="pills-development-tab">
-					<div class="owl-development owl-carousel owl-theme">
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#deepaliModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Deepali.jpeg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Deepali Varshney</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/deepalivarshney/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Project Manager</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#melanionModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Melanion.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Melanion Hendra</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/melanion-hendra-673a85172/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Business Analyst</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#shubhamModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Shubham.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Shubham Tatvamasi</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/shubhamtatvamasi/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">DApps Engineer</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#sameepModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Sameep.png" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Sameep Singhania</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/sameepsi/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Blockchain Engineer</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#dharmendraModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Dharmendra.png" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Dharmendra Jha</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/dkjhaj2ee/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Full Stack Engineer</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#ayoubModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Ayoub.png" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Ayoub Kada</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/ayoub-kada-906655a0/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">UI/UX Designer</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#shikhaModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Shikha.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Shikha Agrawal</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/shikha-agrawal-16115a6/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Machine Learning Engineer</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#narenderModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Narender.jpeg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Narender Sharma</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/narender-sharma-696b8129/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Engineer</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="pills-community" role="tabpanel" aria-labelledby="pills-community-tab">
-					<div class="owl-community owl-carousel owl-theme">
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#baljenderModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Baljender.jpeg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Baljender Singh</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/baljender-singh-5b5b82102/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Community Manager</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#sarfrazModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Sarfraz.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Sarfraz Petkar</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/sarfraz-petkar-7b59297b/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Project Manager</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#johnModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/John.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">John Keyser</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/john-b-keyser-b63911161/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Community Manager and Translator</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#sakshamModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Saksham.jpeg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Saksham Kukreja</h6>
-								<a class="linkedin" href="http://www.linkedin.com/in/sakshamkukreja/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Community Manager Intern</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="pills-marketing" role="tabpanel" aria-labelledby="pills-marketing-tab">
-					<div class="row justify-content-center">
-						<div class="owl-marketing owl-carousel owl-theme col-lg-7">
-							<div class="card mx-auto">
-								<div class="card-img">
-									<div class="card-img-overlay d-flex align-items-end justify-content-center">
-										<a href="#" data-toggle="modal" data-target="#joeyModal">
-					                  		<svg><use xlink:href="#info"></use></svg>
-					                	</a>
-									</div>
-									<img src="img/team/Joey.jpg" alt="team">
-								</div>
-								<div class="card-body">
-									<h6 class="mb-0">Joey Bertschler</h6>
-									<a class="linkedin" href="https://www.linkedin.com/in/joey-bitgrit/" target="_blank">
-										<svg><use xlink:href="#linkedin"></use></svg>
-									</a>
-									<p class="text-muted text-uppercase">Digital Marketer</p>
-								</div>
-							</div>
-
-							<div class="card mx-auto">
-								<div class="card-img">
-									<div class="card-img-overlay d-flex align-items-end justify-content-center">
-										<a href="#" data-toggle="modal" data-target="#kellyModal">
-					                  		<svg><use xlink:href="#info"></use></svg>
-					                	</a>
-									</div>
-									<img src="img/team/Kelly.jpg" alt="team">
-								</div>
-								<div class="card-body">
-									<h6 class="mb-0">Kelly Martin</h6>
-									<a class="linkedin" href="https://www.linkedin.com/in/kellymart/" target="_blank">
-										<svg><use xlink:href="#linkedin"></use></svg>
-									</a>
-									<p class="text-muted text-uppercase">Project Manager</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="pills-hr" role="tabpanel" aria-labelledby="pills-hr-tab">
-					<div class="row justify-content-center">
-						<div class="owl-hr owl-carousel owl-theme col-lg-7">
-							<div class="card mx-auto">
-								<div class="card-img">
-									<div class="card-img-overlay d-flex align-items-end justify-content-center">
-										<a href="#" data-toggle="modal" data-target="#kyokoModal">
-					                  		<svg><use xlink:href="#info"></use></svg>
-					                	</a>
-									</div>
-									<img src="img/team/Kyoko.jpeg" alt="team">
-								</div>
-								<div class="card-body">
-									<h6 class="mb-0">Kyoko Sakaino</h6>
-									<a class="linkedin" href="https://www.linkedin.com/in/kyokosakaino/" target="_blank">
-										<svg><use xlink:href="#linkedin"></use></svg>
-									</a>
-									<p class="text-muted text-uppercase">Head of HR</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="pills-advisors" role="tabpanel" aria-labelledby="pills-advisors-tab">
-					<div class="owl-advisors owl-carousel owl-theme">
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#guptaModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Prof Gupta.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Professor M. P. Gupta</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/profmpgupta/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Research Collaborator</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#karModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Prof Kar.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Professor Arpan Kar</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/arpankar/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Research Collaborator</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#koshizukaModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Prof Koshizuka.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Professor Noboru Koshizuka</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/noboru-koshizuka-b65903a/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Research Collaborator</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#eiadModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Eiad.jpeg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Dr. Eiad Yafi</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/eyafi/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Research Collaborator</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#rupinderModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Rupinder.jpg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Rupinder Goel</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/rupinder-goel-7228124/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Business Advisor</p>
-							</div>
-						</div>
-
-						<div class="card mx-auto">
-							<div class="card-img">
-								<div class="card-img-overlay d-flex align-items-end justify-content-center">
-									<a href="#" data-toggle="modal" data-target="#waelModal">
-				                  		<svg><use xlink:href="#info"></use></svg>
-				                	</a>
-								</div>
-								<img src="img/team/Wael.jpeg" alt="team">
-							</div>
-							<div class="card-body">
-								<h6 class="mb-0">Wael Osman</h6>
-								<a class="linkedin" href="https://www.linkedin.com/in/waelosman/" target="_blank">
-									<svg><use xlink:href="#linkedin"></use></svg>
-								</a>
-								<p class="text-muted text-uppercase">Business Advisor</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Business Solutions -->
-	<section id="business-solutions">
-		<div class="row m-0">
-			<div class="col-md-7 col-lg-8 py-5 bg-primary text-white">
-				<div class="row h-100">
-					<div class="col-10 col-md-9 mx-auto my-auto">
-						<div class="content-wrapper">
-							<h2 class="heading text-white">Business Solutions with Crowd-sourced AI</h2>
-							<h2 class="heading-bg-primary">Data Scientist</h2>
-							<p class="border-style mb-4">Data scientists are looking for meaningful, well-paying work, and companies are in desperate need of quality talent. We bring balance to supply and demand in the field of AI by facilitating results-orientated collaboration.</p>
-							<div class="row align-items-center no-gutters">
-								<div class="col-auto">
-									<a class="btn btn-white" href="mailto:info@bitgrit.net">Get a Quote</a>
-								</div>
-								<div class="col-4">
-									<img class="quote" src="img/quote.svg" alt="quote">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-5 col-lg-4 business-img"></div>
-		</div>
-	</section>
-
-	<!-- Work Efficiently -->
-	<section id="work-efficiently">
-		<div class="row d-flex m-0">
-			<div class="col-md-7 col-lg-8 py-5 text-white order-md-2">
-				<div class="row h-100">
-					<div class="col-10 col-md-9 mx-auto my-auto">
-						<div class="content-wrapper">
-							<h2 class="heading text-white">Work Efficiently Online and Around the Globe</h2>
-							<h2 class="heading-bg-primary">Community</h2>
-							<p class="border-style mb-4">bitgrit is home to a thriving community of over 7,000 data scientists, active both online and offline. Collaborate with engineers around the world and try your hand at real-world problems sets.</p>
-							<h5 class="text-white">Join our Community</h5>
-							<div class="row align-items-center no-gutters">
-								<div class="col-auto">
-									<a class="mr-1" href="https://t.me/bitgrit" target="_blank">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 viewBox="0 0 16 15.1">
-											<title>Telegram</title>
-											<path d="M13,15.1c-0.1,0-0.2,0-0.4-0.1l-4-2.9l-2.2,1.6c-0.2,0.1-0.4,0.2-0.6,0.1c-0.2-0.1-0.3-0.2-0.4-0.5
-											L4.3,9L0.4,7.4C0.2,7.3,0,7.1,0,6.8s0.2-0.5,0.4-0.6l14.7-6.1c0.1,0,0.1,0,0.2-0.1h0.1c0.1,0,0.3,0.1,0.4,0.2l0,0
-											c0.1,0.1,0.1,0.2,0.2,0.4v0.1v0.1l-2.5,13.7c0,0.2-0.2,0.4-0.4,0.5C13.1,15.1,13.1,15.1,13,15.1z M9,10.8l3.6,2.5l1.9-10.6l-7,7
-											L9,10.8C8.9,10.8,8.9,10.8,9,10.8z M6,10.2l0.5,1.9l1-0.8l-1.4-1C6.1,10.3,6,10.3,6,10.2z M2.5,6.9L5.2,8c0.2,0.1,0.3,0.2,0.4,0.5
-											l0.3,1.3c0-0.2,0.1-0.3,0.2-0.4l6.7-6.7L2.5,6.9z"/>
-										</svg>
-									</a>
-									<a class="mr-1" href="https://www.facebook.com/groups/datasciencebitgrit/" target="_blank">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											viewBox="0 0 8 14">
-											<title>Facebook</title>
-											<path d="M8,2.3H6.6c-1.1,0-1.4,0.5-1.4,1.2v1.6h2.7L7.5,7.6H5.2V14H2.4V7.6H0V5.1h2.4V3.3
-												C2.4,1.2,3.8,0,5.9,0c1,0,1.9,0.1,2.1,0.1V2.3z"/>
-										</svg>
-									</a>
-									<a class="mr-1" href="https://www.meetup.com/en-AU/Democratic-AI-by-bitgrit-Tokyo/" target="_blank">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-											 viewBox="0 0 23.6 19.8">
-											<title>Meetup</title>
-											<path class="st0" d="M23.6,18.4c0,0.5-0.2,0.9-0.7,1.1c-0.5,0.3-1.2,0.3-1.8,0.3c-0.9,0-1.8-0.1-2.6-0.4c-1.7-0.5-2.9-2.2-2.9-4
-												c0-0.8,0.3-1.5,0.8-2.5c0.9-1.8,1.7-3.6,2.6-5.4c0.1-0.4,0.3-0.7,0.4-1c0-0.2,0.1-0.3,0.1-0.5c0-0.3,0-0.6-0.3-0.8s-0.6-0.2-0.9,0
-												c-0.3,0.2-0.5,0.6-0.7,0.9C17.2,7,16.7,8,16.2,8.9C15.1,11,14.1,13,13.1,15c-0.3,0.6-0.7,1.1-1.3,1.3c-0.6,0.2-1.2,0.1-1.7-0.1
-												c-0.6-0.2-0.8-0.8-0.7-1.4c0.1-0.4,0.3-0.8,0.4-1.1c0.7-1.7,1.4-3.5,2.1-5.2c0.2-0.4,0.4-0.9,0.4-1.3c0-0.4-0.1-0.8-0.4-1.1
-												c-0.5-0.5-1.4-0.2-1.7,0.5C9.9,7.4,9.6,8.1,9.3,8.8c-1,2.7-2,5.3-3.1,7.9c-0.4,0.7-0.8,1.4-1.7,1.7c-1.1,0.4-2.2,0.2-3.1-0.4
-												c-1.2-0.8-1.7-2.2-1.3-3.6C1,11.2,2,8,3.1,4.9c0.2-0.7,0.5-1.4,0.8-2c0.7-1.5,2.4-2.4,4-2.3c0.5,0,0.9,0.3,1.4,0.5
-												c0.4,0.2,0.9,0.4,1.3,0.6c0.5,0.2,0.9,0.2,1.3-0.1s0.8-0.7,1.2-1c1-0.9,2.3-0.8,3.3,0.1c0.2,0.2,0.4,0.4,0.6,0.6
-												c0.3,0.3,0.6,0.3,0.9,0.1c1-0.6,2-0.6,3.1-0.4c1.1,0.2,1.8,1,2.1,2.1c0.2,0.8,0.1,1.5-0.1,2.2c-0.4,1.3-1,2.6-1.5,3.8
-												c-0.6,1.3-1.2,2.6-1.6,3.9c-0.2,0.8-0.4,1.5-0.4,2.3c0.1,0.9,0.4,1.3,1.3,1.5c0.5,0.1,1.1,0.2,1.6,0.3c0.2,0.1,0.3,0.1,0.5,0.2
-												C23.4,17.5,23.6,17.9,23.6,18.4z"/>
-										</svg>
-									</a>	
-								</div>
-								<div class="col-4">
-									<img class="quote" src="img/community.svg" alt="quote">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-5 col-lg-4 work-img order-md-1"></div>
-		</div>
-	</section>
-
-	<!-- Partners -->
-	<section id="partners" class="bg-light">
-		<div class="container">
-			<div class="row pb-4">
-				<div class="col-md-7">
-					<div class="content-wrapper">
-						<h2 class="heading text-dark">Our Partners</h2>
-						<h2 class="heading-bg-muted">Partners</h2>
-						<p>Trusted by the world's most innovative businesses - big and small.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="owl-partners owl-carousel owl-theme">
-					<a href="https://www.ibm.com/" target="_blank"><img class="img-fluid" src="img/partners/ibm.png" alt="logo"></a>
-					<a href="https://daia.foundation/" target="_blank"><img class="img-fluid" src="img/partners/ai alliance.png" alt="logo"></a>
-					<a href="https://singularitynet.io/" target="_blank"><img class="img-fluid" src="img/partners/singularity.png" alt="logo"></a>
-					<a href="https://macpaw.com/" target="_blank"><img class="img-fluid" src="img/partners/macpaw.png" alt="logo"></a>
-					<a href="http://datasaas.ai/" target="_blank"><img class="img-fluid" src="img/partners/datasaas.png" alt="logo"></a>
-					<a href="https://radiantjapan.com/" target="_blank"><img class="img-fluid" src="img/partners/japan.png" alt="logo"></a>				
-					<a href="http://www.ncspl.net/" target="_blank"><img class="img-fluid" src="img/partners/netsoft.png" alt="logo"></a>
-					<img class="align-middle img-fluid" src="img/partners/standard.png" alt="logo">
-					<a href="https://www.matrix.io/" target="_blank"><img class="img-fluid" src="img/partners/matrix.png" alt="logo"></a>
-					<a href="http://www.vizexec.com/" target="_blank"><img class="img-fluid" src="img/partners/vizexec.png" alt="logo"></a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- News & Announcements -->
-	<section id="news">
-		<div class="container">
-			<div class="row pb-4">
-				<div class="col-md-7">
-					<div class="content-wrapper">
-						<h2 class="heading text-dark">News & Announcements</h2>
-						<h2 class="heading-bg-muted">Announcements</h2>
-						<p>Find out the latest News & Announcements from bitgrit.</p>
-					</div>
-				</div>
-			</div>
-			<div class="row blog-wrapper">
-			</div>
-		</div>
-	</section>
-
-	<!-- Footer -->
-	<footer class="bg-primary">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<div class="content-wrapper">
-						<h2 class="heading text-white">Sign Up for AI and bitgrit Updates</h2>
-						<h2 class="heading-bg-primary">Newsletter</h2>
-						<p class="text-muted">Subscribe to our Newsletter and stay updated with the latest news, events and anything related to AI.</p>
-
-						<!-- Begin Mailchimp Signup Form -->
-						<div id="mc_embed_signup" class="my-4">
-						    <form action="https://bitgrit.us7.list-manage.com/subscribe/post?u=9413bc9ccacf1138df528a900&amp;id=b5c0376e19" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-						        <div id="mc_embed_signup_scroll">
-						        	<div class="row no-gutters">
-						        		<div class="col-7">
-								            <div class="mc-field-group">
-								                <input type="email" value="" name="EMAIL" placeholder="Email Address" class="mb-3 d-block w-100 required email" id="mce-EMAIL" aria-label="email">
-								            </div>
-								            <div id="mce-responses" class="clear">
-								                <div class="response" id="mce-error-response" style="display:none"></div>
-								                <div class="response" id="mce-success-response" style="display:none"></div>
-								            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-								            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9413bc9ccacf1138df528a900_b5c0376e19" tabindex="-1" value="">
-								            </div>
-								        </div>
-								        <div class="col-5">
-								            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe"></div>
-								        </div>
-							        </div>
-						        </div>
-						    </form>
-						</div>
-						<script type='text/javascript' src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-						<!--End mc_embed_signup-->
-
-					</div>
-				</div>
-			</div>
-			<hr class="bg-muted mb-4">
-			<div class="row copyright align-items-center">
-				<div class="col-lg-7 text-center text-lg-left">
-					<svg class="mr-1 align-middle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			       viewBox="0 0 301.44 345.35" xml:space="preserve" fill="white">
-						<path d="M99.31,343.22c43.12-73.78,86.24-147.56,130.04-222.49c23.78,20.27,46.96,40.03,71.31,60.78
-			       c-67.02,54.65-133.56,108.9-200.1,163.15C100.14,344.18,99.73,343.7,99.31,343.22z"/>
-						<path d="M31.47,273c49.66-36.72,99.32-73.43,150.8-111.49c-1.79,3.74-2.56,5.69-3.61,7.47
-			       c-12.8,21.89-25.59,43.79-38.56,65.58c-1.39,2.34-3.58,5-5.98,5.82c-33.87,11.54-67.84,22.79-101.79,34.12
-			       C32.05,274,31.76,273.5,31.47,273z"/>
-						<path d="M133.64,172.91C89.17,138.22,44.91,103.7,0.66,69.18c0.2-0.34,0.4-0.67,0.61-1.01
-			       c64.32,19.62,128.64,39.25,194.48,59.33C174.38,143.12,154.22,157.86,133.64,172.91z"/>
-						<path d="M88.33,0.68c41.88,35.8,83.76,71.6,125.64,107.39c-0.37,0.76-0.73,1.51-1.1,2.27
-			       c-1.75,0-3.63,0.42-5.24-0.06c-22.86-6.89-45.7-13.85-68.48-20.96c-2.33-0.73-5.24-2.05-6.32-3.98
-			       c-15.51-27.61-30.76-55.37-46.07-83.09C87.28,1.73,87.8,1.2,88.33,0.68z"/>
-					</svg>
-					<span class="logo-text text-muted mr-3 align-middle">bitgrit</span>
-					<p class="text-muted align-middle d-inline-block pt-1 my-1">Kamimeguro, Meguro-ku, Tokyo 153-0051, Japan</p>
-				</div>
-				<div class="col-lg-5 text-center text-lg-right">
-					<p class="text-muted align-middle d-inline-block pt-1 my-1">Copyright &copy; bitgrit 2019. All Rights Reserved.</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<!-- Core Bio Modal -->
-	<div class="modal fade" id="frederikModal" tabindex="-1" role="dialog" aria-labelledby="frederikModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="frederikModalLabel">Frederik Bussler</h5>
-						<p class="text-secondary mb-0">CEO</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Frederik Bussler is the CEO of bitgrit, a democratic AI platform directly connecting data scientists to industry problem statements. Before heading bitgrit, he founded a cybersecurity company in the blockchain space named Smart Contract Auditing, co-founded a vertical farming startup named EinFarm to solve sustainability issues, worked as Chief Data Officer for a democratic AI startup in the health space, advised a stock exchange, studied abroad, and worked as an analyst at Maven 11 Capital.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="ashishModal" tabindex="-1" role="dialog" aria-labelledby="ashishModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="ashishModalLabel">Ashish Malhotra</h5>
-						<p class="text-secondary mb-0">Director</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Ashish is a passionate, self-driven, result oriented professional with over 20 years of experience in Business Strategy, Sales, Marketing, Client Relationships & Project Management. Ashish has been instrumental in making many start-ups into successful ventures, primarily in Information Technology-Cloud, Cyber Security, Virtualization, Data Centres & other Technologies.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="muktaModal" tabindex="-1" role="dialog" aria-labelledby="muktaModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="muktaModalLabel">Mukta Arora</h5>
-						<p class="text-secondary mb-0">CIO</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Group Chief Information Officer at Aster DM Healthcare, a leading healthcare authority in the Middle East, India and Far East.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="yuriaModal" tabindex="-1" role="dialog" aria-labelledby="yuriaModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="yuriaModalLabel">Yuria Kondo</h5>
-						<p class="text-secondary mb-0">COO</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Joined bitgrit in its early stages, streamlining processes in different departments within the organization such as administration, marketing, and technical development to reach new heights.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="gautamModal" tabindex="-1" role="dialog" aria-labelledby="gautamModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="gautamModalLabel">Gautam Bajaj</h5>
-						<p class="text-secondary mb-0">Technical Lead</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Experienced Software Engineer at Square Enix, Fandom, and Softbank Mobile, with Data Science experience at [24]7.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Co-Founders Bio Modal -->
-	<div class="modal fade" id="tetsuroModal" tabindex="-1" role="dialog" aria-labelledby="tetsuroModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="tetsuroModalLabel">Tetsuro Masunaga</h5>
-						<p class="text-secondary mb-0">Founder and Director</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Over 15+ years of experience in management and the TMT industry, involved in advertisement for Tokyo Olympics and other ventures. Founded Cosmology Inc., a web-focused advertisement company in 2011. Quickly expanded his company’s business portfolio with his expertise in PR and advertisement, later founding the bitgrit project with Kazuya Saginawa as co-founder.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="kazuyaModal" tabindex="-1" role="dialog" aria-labelledby="kazuyaModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="kazuyaModalLabel">Kazuya Saginawa</h5>
-						<p class="text-secondary mb-0">Co-founder</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Entered Canon Inc. in 2010 as a patent engineer, garnering experience in technological assessment and intellectual property. Saginawa then developed an interest in AI, Blockchain, and Cryptocurrency, pursuing his newfound passion by founding bitgrit with Tetsuro Masunaga.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Development Bio Modal -->
-	<div class="modal fade" id="deepaliModal" tabindex="-1" role="dialog" aria-labelledby="deepaliModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="deepaliModalLabel">Deepali Varshney</h5>
-						<p class="text-secondary mb-0">Project Manager</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>A self-taught programmer and a multilingual, Deepali now works on the overall development and management of technical products at bitgrit.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="melanionModal" tabindex="-1" role="dialog" aria-labelledby="melanionModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="melanionModalLabel">Melanion Hendra</h5>
-						<p class="text-secondary mb-0">Business Analyst</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Graduating from the University of Technology Sydney with Majors in IT, International Relations and Japanese Language, Melanion’s focus is on Intercultural Communication and Business/IT alignment as well as Business Process Management.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="shubhamModal" tabindex="-1" role="dialog" aria-labelledby="shubhamModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="shubhamModalLabel">Shubham Tatvamasi</h5>
-						<p class="text-secondary mb-0">DApps Engineer</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>A Blockchain Architect and Ethereum open source contributor, Shubham has been working on Blockchain technologies since 2015 onwards. Shubham entered into Blockchain space because he truly believes that this is the future of Internet and wants to make this a reality. Shubham’s life’s goal is to build a world where everything is transparent and full of trust.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="sameepModal" tabindex="-1" role="dialog" aria-labelledby="sameepModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="sameepModalLabel">Sameep Singhania</h5>
-						<p class="text-secondary mb-0">Blockchain Engineer</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Sameep Singhania has bachelor's degree in Computer Science and has been a professional programmer for the more than 5 years. He would characterize himself as a Software Developer, Blockchain Engineer and consultant. Sameep has worked for multinational and product based organizations in the past developing enterprise applications for them.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="dharmendraModal" tabindex="-1" role="dialog" aria-labelledby="dharmendraModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="dharmendraModalLabel">Dharmendra Jha</h5>
-						<p class="text-secondary mb-0">Full Stack Engineer</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>A Software Engineer at Netsoft Consulting Services (P) Ltd. Completed MCA Computer Software at Indira Gandhi National Open University.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="ayoubModal" tabindex="-1" role="dialog" aria-labelledby="ayoubModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="ayoubModalLabel">Ayoub Kada</h5>
-						<p class="text-secondary mb-0">UI/UX Designer</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>I'm Ayoub, working as a user experience and interface designer (UX/UI), I solve problems and provide solutions that are minimal and user friendly through design, my responsibilities includes user research, design, user interaction, requirements - user analysis, write UX copies, wireframes and user testing, and present the design solution that is easy to use and that provides a better experience to our users.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="shikhaModal" tabindex="-1" role="dialog" aria-labelledby="shikhaModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="shikhaModalLabel">Shikha Agrawal</h5>
-						<p class="text-secondary mb-0">Machine Learning Engineer</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Shikha is an experienced Machine Learning Engineer building bitgrit's democratic AI framework.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="narenderModal" tabindex="-1" role="dialog" aria-labelledby="narenderModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="narenderModalLabel">Narender Sharma</h5>
-						<p class="text-secondary mb-0">Engineer</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Narender is a Python and Django programmer currently working on bitgrit's competition platform and cloud library.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Community Bio Modal -->
-	<div class="modal fade" id="baljenderModal" tabindex="-1" role="dialog" aria-labelledby="baljenderModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="baljenderModalLabel">Baljender Singh</h5>
-						<p class="text-secondary mb-0">Community Manager</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Experienced Community Manager with a demonstrated history of working in the information technology and services industry. Skilled in Microsoft Excel, Customer Service, Strategic Planning, and Business Development. Strong marketing professional with a PGDM focused in Marketing from Universal Business School.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="sarfrazModal" tabindex="-1" role="dialog" aria-labelledby="sarfrazModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="sarfrazModalLabel">Sarfraz Petkar</h5>
-						<p class="text-secondary mb-0">Project Manager</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>14 years of experience in Finance, Operations, Project Management, and OTC Derivatives; worked with Morgan Stanley, SSNC, JP Morgan. Has a 3-year Diploma in Computer Science. Based out of Tokyo since Jan. 2018, exploring the field of AI Blockchain through Project Management and Community Building.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="johnModal" tabindex="-1" role="dialog" aria-labelledby="johnModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="johnModalLabel">John Keyser</h5>
-						<p class="text-secondary mb-0">Community Manager and Translator</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>With experience as a software engineer at a gaming corporation in Japan, Keyser has also built his career in translation and interpreting: commissioned by numerous firms for consulting services regarding overseas expansion both to and from Japan. Entering into bitgrit early 2018, he provides multi-lingual support and engages in overseas expansion efforts.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="sakshamModal" tabindex="-1" role="dialog" aria-labelledby="sakshamModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="sakshamModalLabel">Saksham Kukreja</h5>
-						<p class="text-secondary mb-0">Community Manager Intern</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Student at the Indian Institute of Technology Roorkee, pursuing entrepreneurship, research and development in emerging technologies. Experienced in strategic, technological, innovation and community building roles at companies like Microsoft and Tech Mahindra, and institutions like the University of Tokyo, IIT Delhi and IIT Roorkee.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Marketing Bio Modal -->
-	<div class="modal fade" id="joeyModal" tabindex="-1" role="dialog" aria-labelledby="joeyModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="joeyModalLabel">Joey Bertschler</h5>
-						<p class="text-secondary mb-0">Digital Marketer</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Once an ordinary office worker in Liechtenstein, Joey yearned to learn more of the world and went to business school in Austria. Unsatisfied with the traditional ways taught there, Joey’s entrepreneurial spirit brought him to Japan. Here, Joey discovered the bitgrit project.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="kellyModal" tabindex="-1" role="dialog" aria-labelledby="kellyModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="kellyModalLabel">Kelly Martin</h5>
-						<p class="text-secondary mb-0">Project Manager</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Kelly is building bitgrit's PR strategy and driving online content for PR and the bitgrit blog.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- HR Bio Modal -->
-	<div class="modal fade" id="kyokoModal" tabindex="-1" role="dialog" aria-labelledby="kyokoModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="kyokoModalLabel">Kyoko Sakaino</h5>
-						<p class="text-secondary mb-0">Head of HR</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Chuo University 2012-2016. Joined NTT-east inc. in Corporate Sales and Teijin inc. as HR. Received the national license of Employment Counselor at Teijin. After retirement of Teijin, she became a head of HR in bitgrit. Further, she writes articles of HR and gives advice to college students. Her job covers a wide range of organizational tasks at bitgrit.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Advisors Bio Modal -->
-	<div class="modal fade" id="guptaModal" tabindex="-1" role="dialog" aria-labelledby="guptaModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="guptaModalLabel">Professor M. P. Gupta</h5>
-						<p class="text-secondary mb-0">Research Collaborator</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Chair Professor & Head of Management Department at Indian Institute of Technology Delhi (India). Known for pioneering works in the area of e-governance. Founded the International Conference on E-governance (ICEG) in 2003, which is running into its 12th year with 14 edited volumes available publicly at www.iceg.net. Gupta is involved in several policy-making committees on ICT in India for both the central and state government.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="karModal" tabindex="-1" role="dialog" aria-labelledby="karModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="karModalLabel">Professor Arpan Kar</h5>
-						<p class="text-secondary mb-0">Research Collaborator</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Associate Professor of Information Systems at the Indian Institute of Technology Delhi. Specialized in Data Science, Machine Learning, Social Media, Digital Transformation, Smart Cities, ICT4D and E-Governance. He has published over 100 articles and 5 books which are highly cited. He has been awarded for research, teaching, and advocacy by multiple reputed organizations like International Federation of Information Processing, Project Management Institute, Association of Indian Management Schools, IIT Delhi, Tata Consultancy Services, etc.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="koshizukaModal" tabindex="-1" role="dialog" aria-labelledby="koshizukaModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="koshizukaModalLabel">Professor Noboru Koshizuka</h5>
-						<p class="text-secondary mb-0">Research Collaborator</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Professor of Interfaculty Initiatives in Information Studies at the University of Tokyo and the University of Tokyo Graduate School of Interdisciplinary Information Studies, in addition to the General Information Analysis and Information Science Courses.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="eiadModal" tabindex="-1" role="dialog" aria-labelledby="eiadModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="eiadModalLabel">Dr. Eiad Yafi</h5>
-						<p class="text-secondary mb-0">Research Collaborator</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Dr. Eiad Yafi is an Assistant Professor at the Malaysian Institute of Information Technology and Deputy Dean of the Institute of Postgraduate Studies, Universiti Kuala Lumpur. He received his PhD in Computer Science from the Jamia Hamdard University, India. Before joining UniKL, he was a faculty member at Arab International University Damascus, Syria. He is active in research in the areas of data mining, Blockchain, Human Computer Interaction and ICTD.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="rupinderModal" tabindex="-1" role="dialog" aria-labelledby="rupinderModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="rupinderModalLabel">Rupinder Goel</h5>
-						<p class="text-secondary mb-0">Business Advisor</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Global Chief Information, Officer Tata Communications India. A global technology leader with over 25 years of experience in digital and telecommunications for transformation of B2B and B2C operations. Goel has led digital transformation at multinational corporations by driving the adoption of the cloud, mobility, big data, social and automation using BoTs, the blockchain, APIs, AI, AR, IoT and m2m.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="waelModal" tabindex="-1" role="dialog" aria-labelledby="waelModallLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<div class="modal-title">
-						<h5 class="mb-0" id="waelModalLabel">Wael Osman</h5>
-						<p class="text-secondary mb-0">Business Advisor</p>
-					</div>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<p>Executive Chairman at Ryts, as well as the CEO of Pixonal, Wael holds 27 years of experience in both the Governmental and Private sectors, including working in the Executive Office of HRH Sheikh Mohammed bin Rashid Al Maktoum, as well as in The Executive Council of Dubai, and has played a crucial part in strategic planning and policy making for the government of Dubai.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Bootstrap core JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-
-	<!-- Plugin JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-
-	<!-- Owl Carousel -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-	<!-- Custom JavaScript for this theme -->
-	<script src="js/script.js"></script>
-	<script src="js/blog.js"></script>
-
-</body>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="assets/favicon.ico">
+        <title>bitgrit - A Democratic AI Solution</title>
+        <meta name="description" content="bitgrit brings together a decentralized platform for data scientists and organizations in need of AI systems, using blockchain technology.">
+        <meta name="keywords" content="AI, blockchain, decentralized ecosystem, data scientists">
+        <meta property="og:title" content="bitgrit - A Democratic AI Solution"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.bitgrit.net/"/>
+        <meta property="og:url" content="bitgrit"/>
+        <meta property="og:description" content="bitgrit brings together a decentralized platform for data scientists and organizations in need of AI systems, using blockchain technology."/>
+        <meta property="og:image" content=""/>
+        <link rel="canonical" href=""/>
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MX898D3');</script>
+        <!-- End Google Tag Manager -->
+
+    </head>
+    <body>
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX898D3"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <nav class="nav">
+            <div class="container">
+                <ul>
+                    <li class="logo"><a href="https://bitgrit.net/"><img src="assets/logo.png" alt="logo"></a></li>
+                    <li class="toggle"><a href="#">
+                        <svg class="toggle-open" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                        </svg>
+                        <svg class="toggle-close" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                    </a></li>
+                    <li class="item"><a href="#">About</a></li>
+                    <li class="item"><a href="https://bitgrit.net/competition/competition_list">Competitions</a></li>
+                    <li class="item"><a href="https://bitgrit.net/jobs/">Job Board</a></li>
+                    <li class="item"><a class="btn" href="https://bitgrit.net/">Sign Up</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <div class="container">
+                <h1>About Us</h1>
+            </div>
+        </header>
+
+        <section>
+            <div class="container bg-purple-light">
+                <div class="row">
+                    <div class="column double order-2">
+                        <h2 class="text-center">Company Overview</h2>
+                        <p>Founded in Tokyo in 2017, bitgrit is a multinational startup that has built up a strong community of over 20,000 data scientists worldwide. In addition to holding AI-focused online and offline events, we host AI competitions where we challenge our prestigious data scientist community to develop unique data-driven solutions across industries.</p>    
+                    </div>
+                    <div class="column order-1 text-center bg-white">
+                        <img src="assets/company.png" alt="company">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container bg-purple-light">
+                <div class="row">
+                    <div class="column double">
+                        <h2 class="text-center">Our Mission</h2>
+                        <p>At bitgrit, we strive to uncover new possibilities for not only AI solutions, but also IoT and blockchain. Our mission is to develop bitgrit into a global platform that congregates data scientists and broadens the scope of services that we can contribute for the betterment of businesses and society. In doing so, we hope to make AI more democratic and openly available for both developers and firms to utilize. </p>    
+                    </div>
+                    <div class="column text-center bg-white">
+                        <img src="assets/mission.png" alt="mission">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container bg-purple-light">
+                <div class="row">
+                    <div class="column double order-2">
+                        <h2 class="text-center">Founders' Statement</h2>
+                        <p>We take such pride in knowing our AI platform has grown to this scale, with an impressive first major competition at the end of 2019 bringing in over 2,000 submissions and participants each. We believe that the key to such a positive response is thanks to our talented community of data scientists, especially those based in Japan, India, and Malaysia – countries where bitgrit has established a strong brand image.</p> 
+                        <p class="text-right">- Tetsuro Masunaga and Kazuya Saginawa, Co-founders</p>  
+                    </div>
+                    <div class="column order-1 text-center bg-white">
+                        <img src="assets/founder.png" alt="founder">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container padding padding-bottom text-center">
+                <p class="text-large text-purple">To learn more about bitgrit and our vision, check out our white paper.</p>
+                <a class="btn" href="https://bitgrit.net/about/doc/whitepaper.pdf">White Paper</a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <h3>Subscribe to our Newsletter</h3>
+                        <p>Enter your email below for updates about our company and competitions.</p>
+                        <!-- Begin Mailchimp Signup Form -->
+                        <div id="mc_embed_signup">
+                        <form action="https://bitgrit.us19.list-manage.com/subscribe/post?u=dd6cb8f1eb85403aab6ea1c68&amp;id=962483bf92" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <!-- <label for="mce-EMAIL">Subscribe</label> -->
+                                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Email" required>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_dd6cb8f1eb85403aab6ea1c68_962483bf92" tabindex="-1" value=""></div>
+                                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-purple"></div>
+                            </div>
+                        </form>
+                        </div>
+                        <!--End mc_embed_signup-->
+                    </div>
+                    <div class="column wrap">
+                        <div class="row">
+                            <div class="column">
+                                <h4>About</h4>
+                                <p><a href="">About Us</a></p>
+                                <p><a href="https://bitgrit.net/jobs/">Jobs</a></p>
+                                <p><a href="">Community</a></p>
+                                <p><a href="">Blog</a></p>
+                            </div>
+                            <div class="column">
+                                <h4>Competitions</h4>
+                                <p><a href="https://bitgrit.net/competition/competition_list">Participate</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <h4>Contact</h4>
+                                <p><a href="">Contact Us</a></p>
+                                <p><a href="">Privacy</a></p>
+                            </div>
+                            <div class="column">
+                                <h4>Follow Us</h4>
+                                <div class="social">
+                                    <a href="https://www.facebook.com/bitgrit/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+                                            <style type="text/css">
+                                                .fb0{fill:#1977F3;}
+                                                .fb1{fill:#FEFEFE;}
+                                            </style>
+                                            <path class="fb0" d="M1000,500C1000,223.9,776.1,0,500,0S0,223.9,0,500c0,249.5,182.8,456.4,421.9,494V644.6h-127V500h127V389.8
+                                                c0-125.3,74.7-194.6,188.9-194.6c54.7,0,111.9,9.8,111.9,9.8v123h-63.1c-62.1,0-81.5,38.5-81.5,78.1V500h138.7l-22.1,144.6H578.1
+                                                V994C817.2,956.5,1000,749.6,1000,500z"/>
+                                            <path class="fb1" d="M694.6,644.6L716.8,500H578.1v-93.8c0-39.5,19.3-78.1,81.5-78.1h63.1V205c0,0-57.2-9.8-111.9-9.8
+                                                c-114.2,0-188.9,69.2-188.9,194.6V500h-127v144.6h127V994c25.5,4,51.5,6,78.1,6s52.7-2.1,78.1-6V644.6H694.6z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="http://twitter.com/bitgrit_global/" target="_blank">
+                                        <svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+                                            <style type="text/css">
+                                                .tw0{fill:#2DAAE1;}
+                                                .tw1{fill:#FFFFFF;}
+                                            </style>
+                                            <circle class="tw0" cx="500" cy="500" r="500"/>
+                                            <path class="tw1" d="M820.6,301.1c-23.6,10.5-48.9,17.5-75.5,20.7c27.2-16.3,48-42.1,57.8-72.8c-25.8,15.3-54.1,26.1-83.5,31.9
+                                                c-24-25.6-58.2-41.5-96-41.5c-72.6,0-131.5,58.9-131.5,131.5c0,10.3,1.2,20.3,3.4,30c-109.3-5.5-206.2-57.9-271.1-137.4
+                                                c-11.3,19.4-17.8,42-17.8,66.1c0,45.6,23.2,85.9,58.5,109.5c-20.9-0.6-41.3-6.3-59.6-16.4v1.7c0,63.7,45.3,116.9,105.5,129
+                                                c-11.1,3-22.7,4.6-34.7,4.6c-8.5,0-16.7-0.8-24.8-2.3c16.7,52.2,65.3,90.3,122.9,91.3c-45,35.3-101.7,56.3-163.3,56.3
+                                                c-10.6,0-21.1-0.6-31.4-1.9c58.2,37.3,127.3,59.1,201.6,59.1c241.9,0,374.2-200.4,374.2-374.2c0-5.7-0.1-11.4-0.4-17
+                                                C780.7,350.6,802.9,327.6,820.6,301.1L820.6,301.1z"/>
+                                        </svg>
+                                    </a>
+                                    <a href="http://t.me/bitgrit" target="_blank">
+                                        <svg mlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                             viewBox="0 0 240 240" style="enable-background:new 0 0 240 240;" xml:space="preserve">
+                                            <style type="text/css">
+                                                .tg0{fill:#0088CC;}
+                                                .tg1{fill:#C8DAEA;}
+                                                .tg2{fill:#A9C9DD;}
+                                                .tg3{fill:white;}
+                                            </style>
+                                            <circle class="tg0" cx="120" cy="120" r="120"/>
+                                            <path class="tg1" d="M98,175c-3.9,0-3.2-1.5-4.6-5.2L82,132.2L170,80"/>
+                                            <path class="tg2" d="M98,175c3,0,4.3-1.4,6-3l16-15.6l-20-12"/>
+                                            <path class="tg3" d="M100,144.4l48.4,35.7c5.5,3,9.5,1.5,10.9-5.1L179,82.3c2-8.1-3.1-11.7-8.4-9.3L55,117.5
+                                                c-7.9,3.2-7.8,7.6-1.4,9.5l29.7,9.3L152,93c3.2-2,6.2-0.9,3.8,1.3"/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="bg-purple">
+            <div class="container padding text-center text-grey">
+                <p>© Copyright 2020 bitgrit - All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/navigation.js"></script>
+
+    </body>
 </html>

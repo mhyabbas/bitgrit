@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+	color: #5A2E8A;
+	font-weight: 900;
+	line-height: 1.2;
+}
+
+img {
+	max-width: 212px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-large {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.text-grey {
+	color: #B8C0CA;
+}
+
+.text-purple {
+	color: #5A2E8A;
+}
+
+@media all and (min-width: 768px) {
+	h2.text-center {
+		text-align: left;
+	}
+
+	img {
+		max-width: 100%;
+	}
+}
+
+@media all and (min-width: 1200px) {
+
+}

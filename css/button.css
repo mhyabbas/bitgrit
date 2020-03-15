@@ -1,0 +1,33 @@
+.btn {
+	position: relative;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 2px;
+	margin-right: 2px;
+	padding: 10px 40px;
+	background-color: #FF9751;
+	border-radius: 6px;
+	border: 1px solid #FF9751;
+	color: white;
+	text-decoration: none;
+	transition: all .4s;
+	vertical-align: middle;
+}
+
+.btn:hover {
+	background-color: white;
+	border-color: #FF9751;
+	color: #FF9751;
+}
+
+.btn.btn-purple {
+	background-color: #924CCC;
+	border-color: #924CCC;	
+}
+
+.btn.btn-purple:hover {
+	background-color: #FF9751;
+	border-color: #FF9751;
+	color: white;
+}
