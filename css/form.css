@@ -1,3 +1,7 @@
+form {
+	margin-bottom: 20px;
+}
+
 form div {
 	display: flex;
 	flex-direction: column;
@@ -6,7 +10,7 @@ form div {
 
 form input {
 	padding: 15px 20px;
-	border: none;
+	border: 1px solid #924CCC;
 	border-radius: 5px;
 	color: #B2BBC6;
 	font-family: 'Nunito', sans-serif;
