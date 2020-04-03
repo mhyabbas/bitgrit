@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .nav {
   background: #5A2E8A;
 }
@@ -5,10 +7,17 @@
 .nav ul {
   list-style: none;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -23,8 +32,12 @@
 }
 
 .nav .toggle a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav .toggle svg {
@@ -50,11 +63,15 @@
 }
 
 .nav .item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .nav .item .btn {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: white;
 }
 
@@ -65,7 +82,9 @@
 @media all and (min-width: 768px) {
 
   .nav ul {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .nav li {
@@ -81,7 +100,9 @@
   }
 
   .nav .logo {
-    flex: 1 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
   }
 
   .nav .logo img {

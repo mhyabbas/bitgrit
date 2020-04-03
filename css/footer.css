@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 footer {
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -5,11 +7,16 @@ footer {
 }
 
 footer .container > .row {
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 footer .row {
-	align-items: inherit;
+	-webkit-box-align: inherit;
+	    -ms-flex-align: inherit;
+	        align-items: inherit;
 }
 
 footer .container > .row > .column:first-of-type {
@@ -22,15 +29,28 @@ footer .column {
 }
 
 footer .column.wrap {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 
 footer .column.wrap .row {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	flex: 1;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-ms-flex-wrap: nowrap;
+	    flex-wrap: nowrap;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	margin: 0;
 }
 
@@ -39,7 +59,9 @@ footer .column.wrap .row:first-of-type {
 }
 
 footer .column.wrap .row .column {
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 
 footer .column .column {
@@ -59,7 +81,10 @@ footer .social svg {
 
 @media all and (min-width: 768px) {
 	footer .column.wrap {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	footer .column.wrap .row:first-of-type {
@@ -69,7 +94,10 @@ footer .social svg {
 
 @media all and (min-width: 1200px) {
 	footer .container > .row {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	footer .container > .row > .column:first-of-type {
