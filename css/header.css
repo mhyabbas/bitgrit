@@ -1,15 +1,13 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 header {
-	margin-top: 30px;
-	margin-bottom: 30px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-color: #D8DDE2;
+	margin-top: 50px;
+	margin-bottom: 50px;
     text-align: center;
 }
 
-header h1 {
-	color: white;
-	margin-bottom: 0;
+@media all and (min-width: 768px) {
+
+	header {
+		margin-bottom: 30px;
+	}
+
 }

@@ -1,7 +1,10 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 .nav {
-  background: #5A2E8A;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0px 3px 6px #00000029;
+  z-index: 100;
 }
 
 .nav ul {
@@ -27,7 +30,7 @@
 }
 
 .nav a {
-  color: #5A2E8A;
+  color: #B2BBC6;
   text-decoration: none;
 }
 
@@ -43,7 +46,7 @@
 .nav .toggle svg {
   width: 35px;
   height: 35px;
-  fill: white;
+  fill: #5A2E8A;
 }
 
 .nav .toggle svg.toggle-close {
@@ -92,21 +95,16 @@
   }
 
   .nav a {
-    color: white;
+    color: #B2BBC6;
   }
 
   .nav .toggle {
     display: none;
   }
 
-  .nav .logo {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
-  }
-
   .nav .logo img {
      max-width: 118px;
+     margin-right: 50px;
   }
 
   .nav .item {
@@ -119,8 +117,12 @@
     text-align: center;
   }
 
-  .nav .item:last-of-type {
+  .nav .login {
+    display: flex;
+    justify-content: flex-end;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
     padding-right: inherit;
   }
-
 }
