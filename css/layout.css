@@ -16,6 +16,10 @@ section.padding {
     padding: 30px;
 }
 
+.column.pb-0 {
+    padding-bottom: 0;
+}
+
 .column.bg-white {
     background-color: white;
 }
@@ -40,7 +44,7 @@ section.padding {
     background-color: #EFE9F4;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 800px) {
     section {
         padding-top: 30px;
         padding-bottom: 30px;

@@ -28,13 +28,16 @@
 }
 
 body {
-	overflow: hidden;
 	margin: 0;
 	padding: 70px 0 0 0;
     font-family: 'Avenir LT Std';
     font-weight: normal;
     font-style: normal;
 	line-height: 1.6;
+}
+
+body.modal-open {
+	overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,8 +71,7 @@ img {
 	color: #5A2E8A;
 }
 
-@media all and (min-width: 768px) {
-	
+@media all and (min-width: 800px) {
 	body {
 		padding: 74px 0 0 0;
 	}

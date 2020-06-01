@@ -38,7 +38,7 @@ footer .copyright {
 	color: #7E7E7E;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 800px) {
 	footer .row:first-of-type {
 		justify-content: center;
 	}

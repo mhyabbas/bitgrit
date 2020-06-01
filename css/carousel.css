@@ -1,0 +1,98 @@
+.carousel-wrapper {
+	position: relative;
+	text-align: center;
+}
+
+.carousel {
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.carousel .column {
+	margin: 10px;
+	padding: 0;
+}
+
+.carousel .card {
+	margin: 10px;
+	padding: 15px;
+	text-align: left;
+}
+
+.carousel.news .card {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.carousel.news .card a {
+	text-decoration: none;
+}
+
+.carousel .card .thumbnail {
+	margin-bottom: 25px;
+	height: 200px;
+	background: url(../assets/placeholder.png) center center/cover no-repeat;
+}
+
+.carousel.partners .slick-track {
+	display: flex;
+	align-items: center;
+}
+
+.carousel .slick-slide {
+	outline: 0;
+}
+
+.carousel .slick-slide img {
+	margin: 0 auto;
+}
+
+svg.carousel-arrow {
+	margin: 0 10px;
+	width: 30px;
+	height: 30px;
+	fill: #924CCC;
+	cursor: pointer;
+	-webkit-transition: all .4s;
+	-o-transition: all .4s;
+	transition: all .4s;
+}
+
+svg.carousel-arrow path {
+	fill: none;
+	stroke: #FFFFFF;
+	stroke-width: 2.5;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+svg.carousel-arrow:hover {
+	fill: #6b2d9e;
+}
+
+@media all and (min-width: 600px) {
+	.carousel.news .card {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.carousel-wrapper {
+		text-align: inherit;
+	}
+
+	.carousel.news .card {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	svg.carousel-arrow {
+		position: absolute;
+		top: 55%;
+	}
+
+	svg.next {
+		right: 0;
+	}
+}
