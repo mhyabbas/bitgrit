@@ -7,12 +7,13 @@ $(document).ready(function() {
          const res = data.items //This is an array with the content. No feed, no info about author etc..
          const posts = res.filter(item => item.categories.length > 0) // That's the main trick* !
          
-         var recentposts = posts.slice(0, 6);
+         var recentposts = posts.slice(0, 10);
 
          setTimeout(function(){
 
           if (recentposts.length >= 1) {
             $('.news').slick({
+              lazyLoad: 'ondemand',
               prevArrow: "#news-previous",
               nextArrow: "#news-next",
               speed: 300,
@@ -33,9 +34,11 @@ $(document).ready(function() {
               }
               ]
             });
-          } 
+          }
 
-        }, 1000);
+          $('.news').show(); 
+
+        }, 100);
 
          function toText(node) {
            let tag = document.createElement('div')

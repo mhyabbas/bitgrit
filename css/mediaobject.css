@@ -2,24 +2,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px;
+  padding: 20px;
   cursor: pointer;
 }
 
 .media-icon {
-  margin-right: 20px;
-  width: 50px;
-  height: 50px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
 }
 
 .media-title {
-  margin: 0;
+  margin: 0 5px 0 0;
+  text-align: left;
 }
 
 .media-arrow {
   margin-left: auto;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
+}
+
+@media all and (min-width: 600px) {
+  .media {
+    padding: 25px;
+  }
+
+  .media-icon {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .media-arrow {
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+  }
 }
 
 @media all and (min-width: 800px) {
