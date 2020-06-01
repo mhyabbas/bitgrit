@@ -20,8 +20,12 @@
 
 .modal-dialog {
   position: relative;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 10px;
   width: auto;
+  min-height: 90%;
   pointer-events: none;
 }
 
@@ -83,6 +87,10 @@
   -webkit-box-flex: 1;
           flex: 1 1 auto;
   padding: 16px;
+}
+
+.modal-body p {
+  font-size: 18px;
 }
 
 .modal-backdrop {
