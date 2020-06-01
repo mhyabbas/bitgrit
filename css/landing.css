@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 body.landing header {
 	margin-bottom: 50px;
 	padding-left: 15px;
@@ -22,7 +29,8 @@ form.form-card {
 	padding: 40px 30px;
 	width: 100%;
 	background: white;
-	box-shadow: 1px 5px 8px #B2BBC6;
+	-webkit-box-shadow: 1px 5px 8px #B2BBC6;
+	        box-shadow: 1px 5px 8px #B2BBC6;
 	border-radius: 12px;
 }
 

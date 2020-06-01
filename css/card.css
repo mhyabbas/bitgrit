@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .cards {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -17,7 +24,8 @@
 	max-width: 80%;
 	background: white;
 	text-align: center;
-	box-shadow: 1px 5px 8px #B2BBC6;
+	-webkit-box-shadow: 1px 5px 8px #B2BBC6;
+	        box-shadow: 1px 5px 8px #B2BBC6;
 }
 
 @media all and (min-width: 600px) {
