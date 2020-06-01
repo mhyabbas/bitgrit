@@ -1,14 +1,9 @@
-section.padding {
+section.p-1 {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.container.padding {
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-.container.padding-bottom {
+.container.pb-1 {
     padding-bottom: 30px;
 }
 
@@ -65,7 +60,6 @@ section.padding {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        /*margin: -10px;*/
     }
 
     .column {
@@ -74,7 +68,6 @@ section.padding {
         -webkit-box-flex: 1;
             -ms-flex: 1;
                 flex: 1;
-        /*margin: 10px;*/
     }
 
     .column.order-1 {
