@@ -14,10 +14,16 @@
 	margin: 15px 10px 10px;
 	padding: 40px 30px;
 	width: 100%;
-	max-width: 70%;
+	max-width: 80%;
 	background: white;
 	text-align: center;
 	box-shadow: 1px 5px 8px #B2BBC6;
+}
+
+@media all and (min-width: 600px) {
+	.card {
+		max-width: 70%;
+	}
 }
 
 @media all and (min-width: 800px) {
