@@ -7,7 +7,7 @@ $(document).ready(function() {
          const res = data.items //This is an array with the content. No feed, no info about author etc..
          const posts = res.filter(item => item.categories.length > 0) // That's the main trick* !
          
-         var recentposts = posts.slice(0, 10);
+         var recentposts = posts.slice(0, 6);
 
          setTimeout(function(){
 
