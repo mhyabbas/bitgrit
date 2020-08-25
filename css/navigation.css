@@ -10,8 +10,6 @@
   top: 0;
   width: 100%;
   background: white;
-  -webkit-box-shadow: 0px 3px 6px #00000029;
-          box-shadow: 0px 3px 6px #00000029;
   z-index: 100;
 }
 
@@ -22,13 +20,13 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
@@ -38,7 +36,7 @@
 }
 
 .nav a {
-  color: #B2BBC6;
+  color: black;
   text-decoration: none;
 }
 
@@ -47,8 +45,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav .toggle svg {
@@ -81,43 +79,37 @@
 
 .nav .item .btn {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  color: white;
-}
-
-.nav .item .btn:hover {
-  color: #FF9751;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 @media all and (min-width: 800px) {
   .nav ul {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .nav li {
     padding: 15px 5px;
   }
 
-  .nav a {
-    color: #B2BBC6;
-  }
-
   .nav .toggle {
     display: none;
   }
 
-  .nav .logo img {
-     max-width: 118px;
-     margin-right: 50px;
+  .nav .logo {
+    margin-right: auto;
   }
 
-  .nav .item {
+  .nav .logo img {
+    max-width: 118px;
+  }
+
+ .nav .item {
     display: block;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
     width: auto;
     background-color: inherit;
     border-top: inherit;
@@ -125,15 +117,6 @@
   }
 
   .nav .login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-flex: 1;
-        -ms-flex: 1 0 auto;
-            flex: 1 0 auto;
     padding-right: inherit;
   }
 }

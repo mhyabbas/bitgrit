@@ -11,11 +11,11 @@
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	margin: 0 auto;
 	padding: 10px 40px;
 	background-color: #FF9751;
@@ -37,11 +37,11 @@
 
 .btn.btn-purple {
 	background-color: #924CCC;
-	border-color: #924CCC;	
+	border-color: #924CCC;
+	color: white;
 }
 
 .btn.btn-purple:hover {
 	background-color: #FF9751;
 	border-color: #FF9751;
-	color: white;
 }

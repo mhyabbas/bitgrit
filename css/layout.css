@@ -46,6 +46,10 @@ section.p-1 {
     background-color: #EFE9F4;
 }
 
+.hidden-sm {
+    display: none;
+}
+
 @media all and (min-width: 800px) {
     section {
         padding-top: 30px;

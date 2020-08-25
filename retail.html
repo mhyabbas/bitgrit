@@ -1,0 +1,326 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="assets/favicon.ico">
+        <title>Retail Report</title>
+        <meta name="description" content="Founded in Tokyo in 2017, bitgrit is an AI startup that has built up a strong community of over 20,000 data scientists worldwide.">
+        <meta name="keywords" content="AI, blockchain, decentralized ecosystem, data scientists">
+        <meta property="og:title" content="About bitgrit"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.bitgrit.net/"/>
+        <meta property="og:url" content="bitgrit"/>
+        <meta property="og:description" content="Founded in Tokyo in 2017, bitgrit is an AI startup that has built up a strong community of over 20,000 data scientists worldwide."/>
+        <meta property="og:image" content=""/>
+        <link rel="canonical" href=""/>
+
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MX898D3');</script>
+        <!-- End Google Tag Manager -->
+
+        <!-- AJAX Event Listener for Google Tag Manager -->
+        <script id="gtm-jq-ajax-listen" type="text/javascript">
+          (function() {
+         
+            'use strict';
+            var $;
+            var n = 0;
+            init();
+         
+            function init(n) {
+         
+              // Ensure jQuery is available before anything
+              if (typeof jQuery !== 'undefined') {
+                
+                // Define our $ shortcut locally
+                $ = jQuery;
+                bindToAjax();
+         
+              // Check for up to 10 seconds
+              } else if (n < 20) {
+            
+                n++;
+                setTimeout(init, 500);
+         
+              }
+         
+            }
+         
+            function bindToAjax() {
+         
+              $(document).bind('ajaxComplete', function(evt, jqXhr, opts) {
+         
+                // Create a fake a element for magically simple URL parsing
+                var fullUrl = document.createElement('a');
+                fullUrl.href = opts.url;
+         
+                // IE9+ strips the leading slash from a.pathname because who wants to get home on time Friday anyways
+                var pathname = fullUrl.pathname[0] === '/' ? fullUrl.pathname : '/' + fullUrl.pathname;
+                // Manually remove the leading question mark, if there is one
+                var queryString = fullUrl.search[0] === '?' ? fullUrl.search.slice(1) : fullUrl.search;
+                // Turn our params and headers into objects for easier reference
+                var queryParameters = objMap(queryString, '&', '=', true);
+                var headers = objMap(jqXhr.getAllResponseHeaders(), '\n', ':');
+         
+                // Blindly push to the dataLayer because this fires within GTM
+                dataLayer.push({
+                  'event': 'ajaxComplete',
+                  'attributes': {
+                    // Return empty strings to prevent accidental inheritance of old data
+                    'type': opts.type || '',
+                    'url': fullUrl.href || '',
+                    'queryParameters': queryParameters,
+                    'pathname': pathname || '',
+                    'hostname': fullUrl.hostname || '',
+                    'protocol': fullUrl.protocol || '',
+                    'fragment': fullUrl.hash || '',
+                    'statusCode': jqXhr.status || '',
+                    'statusText': jqXhr.statusText || '',
+                    'headers': headers,
+                    'timestamp': evt.timeStamp || '',
+                    'contentType': opts.contentType || '',
+                    // Defer to jQuery's handling of the response
+                    'response': (jqXhr.responseJSON || jqXhr.responseXML || jqXhr.responseText || '')
+                  }
+                });
+         
+              });
+         
+            }
+         
+            function objMap(data, delim, spl, decode) {
+         
+              var obj = {};
+         
+              // If one of our parameters is missing, return an empty object
+              if (!data || !delim || !spl) {
+         
+                return {};
+         
+              }
+         
+              var arr = data.split(delim);
+              var i;
+         
+              if (arr) {
+         
+                for (i = 0; i < arr.length; i++) {
+         
+                  // If the decode flag is present, URL decode the set
+                  var item = decode ? decodeURIComponent(arr[i]) : arr[i];
+                  var pair = item.split(spl);
+         
+                  var key = trim_(pair[0]);
+                  var value = trim_(pair[1]);
+         
+                  if (key && value) {
+         
+                    obj[key] = value;
+         
+                  }
+         
+                }
+         
+              }
+         
+              return obj;
+         
+            }
+         
+            // Basic .trim() polyfill
+            function trim_(str) {
+         
+              if (str) {
+         
+                return str.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '');
+         
+              }
+         
+            }
+         
+         
+          })();
+          /*
+           * v0.1.0
+           * Created by the Google Analytics consultants at http://lunametrics15.staging.wpengine.com
+           * Written by @notdanwilkerson
+           * Documentation: http://lunametrics15.staging.wpengine.com/blog/2015/08/27/ajax-event-listener-google-tag-manager/
+           * Licensed under the Creative Commons 4.0 Attribution Public License
+           */
+        </script>
+
+    </head>
+    <body class="landing">
+
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MX898D3"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <nav class="nav">
+            <div class="container">
+                <ul>
+                    <li class="logo"><a href="https://bitgrit.net/"><img src="assets/logo.png" alt="logo"></a></li>
+                    <li class="toggle"><a href="#" aria-label="toggle menu">
+                        <svg class="toggle-open" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                        </svg>
+                        <svg class="toggle-close" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                            <path d="M0 0h24v24H0z" fill="none"/>
+                        </svg>
+                    </a></li>
+                    <li class="item"><a href="https://bitgrit.net/competition/">Competitions</a></li>
+                    <li class="item"><a href="https://bitgrit.net/dataset/">Datasets</a></li>
+                    <li class="item"><a href="https://bitgrit.net/jobs/">Job Board</a></li>
+                    <li class="item login"><a href="https://bitgrit.net/">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header>
+            <div class="container">
+                <h1>Download the Retail Report</h1>
+            </div>
+        </header>
+
+        <section class="bg-purple-light">
+            <div class="container">
+                <div class="row">
+                    <div class="column double">
+                        <p>Thank you for your interest in our AI use cases for the field of Retail, created in collaboration by bitgrit’s Business and Data Science teams. Please fill in the registration form on the right to get immediate access to use case data and explore the applications of AI in this industry. We look forward to working with you to address your AI needs.</p>
+                        <img class="hidden-sm" src="assets/whitepaper.png" alt="whitepaper">
+                    </div>
+                    <div class="column">
+                        <form class="form form-card">
+                            <h3>Download</h3>
+                            <p>Fill in your information below</p>
+                            <input type="email" id="email" placeholder="*Email" aria-label="Email" required>
+                            <input type="text" id="name" name="name" placeholder="*Name" aria-label="Name" required>
+                            <input type="text" id="company" name="company" placeholder="*Company" aria-label="Company" required>
+                            <input type="text" id="industry" name="industry" placeholder="*Industry" aria-label="Industry" required>
+                            <input type="text" id="phone" name="phone" placeholder="Phone" aria-label="Phone">
+                            <label class="checkbox-wrapper">Subscribe to bitgrit newsletter
+                                <input type="checkbox" checked="checked">
+                                <span class="checkbox"></span>
+                            </label>
+                            <input class="btn" type="submit" value="Download">
+                        </form>
+                        <img class="hidden-lg" src="assets/whitepaper.png" alt="whitepaper">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <img class="logo" src="assets/logo white.png" alt="logo">
+                        <p>bitgrit is an Asia-based networking platform for data scientists that develops mechanisms to optimize AI and better integrate it in today's society.</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com/bitgrit/" target="_blank" rel="noopener" aria-label="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                                    <style type="text/css">
+                                        .fb0{fill:white;}
+                                        .fb1{fill:#5A2E8A;}
+                                    </style>
+                                    <path class="fb0" d="M1000,500C1000,223.9,776.1,0,500,0S0,223.9,0,500c0,249.5,182.8,456.4,421.9,494V644.6h-127V500h127V389.8
+                                        c0-125.3,74.7-194.6,188.9-194.6c54.7,0,111.9,9.8,111.9,9.8v123h-63.1c-62.1,0-81.5,38.5-81.5,78.1V500h138.7l-22.1,144.6H578.1
+                                        V994C817.2,956.5,1000,749.6,1000,500z"/>
+                                    <path class="fb1" d="M694.6,644.6L716.8,500H578.1v-93.8c0-39.5,19.3-78.1,81.5-78.1h63.1V205c0,0-57.2-9.8-111.9-9.8
+                                        c-114.2,0-188.9,69.2-188.9,194.6V500h-127v144.6h127V994c25.5,4,51.5,6,78.1,6s52.7-2.1,78.1-6V644.6H694.6z"/>
+                                </svg>
+                            </a>
+                            <a href="http://twitter.com/bitgrit_global/" target="_blank" rel="noopener" aria-label="Twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                                    <style type="text/css">
+                                        .tw0{fill:white;}
+                                        .tw1{fill:#5A2E8A;}
+                                    </style>
+                                    <circle class="tw0" cx="500" cy="500" r="500"/>
+                                    <path class="tw1" d="M820.6,301.1c-23.6,10.5-48.9,17.5-75.5,20.7c27.2-16.3,48-42.1,57.8-72.8c-25.8,15.3-54.1,26.1-83.5,31.9
+                                        c-24-25.6-58.2-41.5-96-41.5c-72.6,0-131.5,58.9-131.5,131.5c0,10.3,1.2,20.3,3.4,30c-109.3-5.5-206.2-57.9-271.1-137.4
+                                        c-11.3,19.4-17.8,42-17.8,66.1c0,45.6,23.2,85.9,58.5,109.5c-20.9-0.6-41.3-6.3-59.6-16.4v1.7c0,63.7,45.3,116.9,105.5,129
+                                        c-11.1,3-22.7,4.6-34.7,4.6c-8.5,0-16.7-0.8-24.8-2.3c16.7,52.2,65.3,90.3,122.9,91.3c-45,35.3-101.7,56.3-163.3,56.3
+                                        c-10.6,0-21.1-0.6-31.4-1.9c58.2,37.3,127.3,59.1,201.6,59.1c241.9,0,374.2-200.4,374.2-374.2c0-5.7-0.1-11.4-0.4-17
+                                        C780.7,350.6,802.9,327.6,820.6,301.1L820.6,301.1z"/>
+                                </svg>
+                            </a>
+                            <a href="http://t.me/bitgrit" target="_blank" rel="noopener" aria-label="Telegram">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+                                    <style type="text/css">
+                                        .tg0{fill:white;}
+                                        .tg1{fill:white;}
+                                        .tg2{fill:#5A2E8A;}
+                                        .tg3{fill:#5A2E8A;}
+                                    </style>
+                                    <circle class="tg0" cx="120" cy="120" r="120"/>
+                                    <path class="tg1" d="M98,175c-3.9,0-3.2-1.5-4.6-5.2L82,132.2L170,80"/>
+                                    <path class="tg2" d="M98,175c3,0,4.3-1.4,6-3l16-15.6l-20-12"/>
+                                    <path class="tg3" d="M100,144.4l48.4,35.7c5.5,3,9.5,1.5,10.9-5.1L179,82.3c2-8.1-3.1-11.7-8.4-9.3L55,117.5
+                                        c-7.9,3.2-7.8,7.6-1.4,9.5l29.7,9.3L152,93c3.2-2,6.2-0.9,3.8,1.3"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/bitgrit" target="_blank" rel="noopener" aria-label="Instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+                                    <circle cx="24" cy="24" r="24" fill="#fff"/>
+                                    <path d="M31.2,12.3H16.8a4.48,4.48,0,0,0-4.5,4.5V31.2a4.48,4.48,0,0,0,4.5,4.5H31.2a4.48,4.48,0,0,0,4.5-4.5V16.8a4.48,4.48,0,0,0-4.5-4.5ZM32.5,15H33v4H29V15ZM20.7,21.6a4.05,4.05,0,0,1,6.6,0,4.07,4.07,0,0,1,.8,2.4,4.1,4.1,0,0,1-8.2,0A4.07,4.07,0,0,1,20.7,21.6Zm12.7,9.6a2.22,2.22,0,0,1-2.2,2.2H16.8a2.22,2.22,0,0,1-2.2-2.2V21.6h3.5a6.4,6.4,0,1,0,11.8,0h3.5Z" fill="#5a2e8a"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/company/bitgrit" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="24" cy="24" fill="white" r="24"/>
+                                    <path d="M17.4,34.9h-4.6V20.1h4.6V34.9z M14.9,18.2L14.9,18.2c-1.7,0-2.8-1.1-2.8-2.6c0-1.5,1.1-2.6,2.8-2.6  c1.7,0,2.8,1.1,2.8,2.6C17.7,17.1,16.7,18.2,14.9,18.2z M35.9,34.9h-5.3v-7.7c0-2-0.8-3.4-2.6-3.4c-1.4,0-2.1,0.9-2.5,1.8  c-0.1,0.3-0.1,0.8-0.1,1.2v8h-5.2c0,0,0.1-13.6,0-14.8h5.2v2.3c0.3-1,2-2.5,4.6-2.5c3.3,0,5.9,2.1,5.9,6.7V34.9z" fill="#5A2E8A"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h3>Features</h3>
+                        <p><a href="https://bitgrit.net/competition/">Competitions</a></p>
+                        <p><a href="https://bitgrit.net/jobs/">Job Board</a></p>
+                        <p><a href="https://bitgrit.net/dataset/">Datasets</a></p>
+                    </div>
+                    <div class="column">
+                        <h3>Company</h3>
+                        <p><a href="https://bitgrit.net/info#about">About Us</a>
+                        <p><a href="">Team</a></p>
+                        <p><a href="">Community</a></p>
+                        <p><a href="">Blog</a></p>
+                        <p><a href="">Events</a></p>
+                    </div>
+                    <div class="column">
+                        <h3>Contact</h3>
+                        <p>info@bitgrit.net</p>
+                        <p>+81 342148315</p>
+                        <p>Koganei Building 4th Floor, 3−4−3 Kamimeguro, Meguro City, Tokyo 153-0051</p>
+                    </div>
+                </div>
+                <div class="row copyright">
+                    <div class="column">
+                        <p>Copyright © bitgrit 2020</p>
+                    </div>
+                    <div class="column">
+                        <a href="https://bitgrit.net/info#terms">Terms & Conditions</a> / <a href="https://bitgrit.net/info#privacy">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/navigation.js"></script>
+
+        <script type="text/javascript"> _linkedin_partner_id = "2224500"; window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || []; window._linkedin_data_partner_ids.push(_linkedin_partner_id); </script><script type="text/javascript"> (function(){var s = document.getElementsByTagName("script")[0]; var b = document.createElement("script"); b.type = "text/javascript";b.async = true; b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js"; s.parentNode.insertBefore(b, s);})(); </script> <noscript> <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=2224500&fmt=gif" /> </noscript>
+
+    </body>
+</html>
