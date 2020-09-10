@@ -42,8 +42,19 @@ section.p-1 {
     background-color: #5A2E8A;
 }
 
+.bg-purple-alt {
+    background-color: #6f389f;
+}
+
 .bg-purple-light {
     background-color: #EFE9F4;
+}
+
+.bg-patterns {
+    background-image: url("../assets/bg circle.svg"), url("../assets/bg dots.svg"), url("../assets/bg ring.svg");
+    background-position: -100px 60px, left top, 110% -150px;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: 450px 450px, 200px 200px, 300px 300px;
 }
 
 .hidden-sm {

@@ -5,91 +5,136 @@
 * Browsers: last 4 version
 */
 
-form {
-	margin-bottom: 20px;
-}
-
-form div {
+form .form-row {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-ms-flex-direction: column;
+	flex-direction: column;
 }
 
-form input {
-	padding: 15px 20px;
-	border: 1px solid #924CCC;
+form .form-group {
+	position: relative;
+}
+
+form label {
+	position: absolute; 
+	top: 20px;
+	left: 22px;
+	color: #EFE9F4;
+	font-size: 10px;
+	opacity: 0;
+	-webkit-transition: .2s ease top, .2s ease opacity;
+	-o-transition: .2s ease top, .2s ease opacity;
+	transition: .2s ease top, .2s ease opacity;
+}
+
+form .show label {
+	top: 5px;
+	opacity: 1; 
+}
+
+form input, form textarea {
+	margin-bottom: 20px;
+	padding: 20px 20px 15px;
+	width: 100%;
+	background-color: transparent;
+	border: 1px solid #EFE9F4;
 	border-radius: 5px;
-	color: #B2BBC6;
+	color: white;
 	font-family: 'Avenir LT Std';
-	font-size: 16px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 }
 
-form input[type='email'] {
-	margin-bottom: 20px;
-	min-width: 80%;
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
+	-webkit-transition: background-color 5000s;
+	transition: background-color 5000s;
+	-webkit-text-fill-color: #fff !important;
+}
+
+form textarea {
+	height: 130px;
 }
 
 form ::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #B2BBC6;
-  opacity: 1; /* Firefox */
+	color: white;
+	opacity: 1; /* Firefox */
 }
 
 form ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #B2BBC6;
-  opacity: 1; /* Firefox */
+	color: white;
+	opacity: 1; /* Firefox */
 }
 
 form :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #B2BBC6;
-  opacity: 1; /* Firefox */
+	color: white;
+	opacity: 1; /* Firefox */
 }
 
 form ::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #B2BBC6;
-  opacity: 1; /* Firefox */
+	color: white;
+	opacity: 1; /* Firefox */
 }
 
 form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #B2BBC6;
-  opacity: 1; /* Firefox */
+	color: white;
+	opacity: 1; /* Firefox */
 }
 
 form :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #B2BBC6;
+	color: white;
 }
 
 form ::-ms-input-placeholder { /* Microsoft Edge */
-  color: #B2BBC6;
+	color: white;
 }
 
 form .btn {
+	padding: 18px 40px 13px;
+	font-size: 16px;
 	cursor: pointer;
 }
 
-@media all and (min-width: 800px) {
-	form div {
+@media all and (min-width: 1200px) {
+	form .form-row {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
+		-ms-flex-direction: row;
+		flex-direction: row;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
 	}
 
-	form input[type='email'] {
-		-webkit-box-flex: 4;
-		    -ms-flex: 4;
-		        flex: 4;
-		margin-right: 20px;
-		margin-bottom: inherit;
-		min-width: inherit;
+	form .form-column {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 48.5%;
+		        flex: 0 0 48.5%;
+	}
+
+	form .form-group {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	form textarea {
+		height: 100%;
 	}
 }

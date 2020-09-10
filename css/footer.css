@@ -6,12 +6,9 @@
 */
 
 footer {
-	margin-top: 30px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 	background-color: #5A2E8A;
-	-webkit-box-shadow: 0px -3px 6px #00000029;
-	box-shadow: 0px -3px 6px #00000029;
 	color: #EFE9F4;
 	font-size: 14px;
 }

@@ -45,3 +45,15 @@
 	background-color: #FF9751;
 	border-color: #FF9751;
 }
+
+.btn.btn-white {
+	background-color: white;
+	border-color: white;
+	color: #924CCC;
+}
+
+.btn.btn-white:hover {
+	background-color: #FF9751;
+	border-color: #FF9751;
+	color: white;
+}

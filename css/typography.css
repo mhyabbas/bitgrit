@@ -74,12 +74,20 @@ img {
 	font-size: 22px;
 }
 
+.text-white {
+	color: white;
+}
+
 .text-grey {
 	color: #B8C0CA;
 }
 
 .text-purple {
 	color: #5A2E8A;
+}
+
+.text-purple-light {
+	color: #EFE9F4;
 }
 
 @media all and (min-width: 800px) {
