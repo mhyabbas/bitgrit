@@ -44,7 +44,7 @@ form input, form textarea {
 	border: 1px solid #EFE9F4;
 	border-radius: 5px;
 	color: white;
-	font-family: 'Avenir LT Std';
+	font-family: 'GT-Walsheim', 'Overpass', sans-serif;
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
@@ -94,9 +94,14 @@ form ::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 form .btn {
+	margin-bottom: 20px;
 	padding: 18px 40px 13px;
 	font-size: 16px;
 	cursor: pointer;
+}
+
+form .g-recaptcha > div {
+	margin: 0 auto;
 }
 
 @media all and (min-width: 1200px) {

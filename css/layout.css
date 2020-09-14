@@ -115,6 +115,12 @@ section.p-1 {
     }
 }
 
+@media all and (min-width: 1000px) {
+    .container {
+        width: 940px;
+    }
+}
+
 @media all and (min-width: 1200px) {
     .container {
         width: 1140px;

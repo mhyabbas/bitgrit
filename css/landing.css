@@ -19,8 +19,45 @@ body.landing section {
 	margin-bottom: 50px;
 }
 
+body.landing form input {
+	color: #B8C0CA;
+}
+
+body.landing form ::-webkit-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #B8C0CA;
+	opacity: 1; /* Firefox */
+}
+
+body.landing form ::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #B8C0CA;
+	opacity: 1; /* Firefox */
+}
+
+body.landing form :-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #B8C0CA;
+	opacity: 1; /* Firefox */
+}
+
+body.landing form ::-ms-input-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #B8C0CA;
+	opacity: 1; /* Firefox */
+}
+
+body.landing form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #B8C0CA;
+	opacity: 1; /* Firefox */
+}
+
+body.landing form :-ms-input-placeholder { /* Internet Explorer 10-11 */
+	color: #B8C0CA;
+}
+
+body.landing form ::-ms-input-placeholder { /* Microsoft Edge */
+	color: #B8C0CA;
+}
+
 /*Form*/
-form.form-card {
+body.landing form.form-card {
 	padding: 40px 30px;
 	width: 100%;
 	background: white;
@@ -29,24 +66,26 @@ form.form-card {
 	border-radius: 12px;
 }
 
-form.form-card h3 {
+body.landing form.form-card h3 {
 	font-size: 24px;
 	margin-bottom: 5px;
 }
 
-form.form-card p {
+body.landing form.form-card p {
 	margin-top: 0;
 	color: #B8C0CA;
 }
 
-form.form-card input[type='text'], form.form-card input[type='email'] {
+body.landing form.form-card input[type='text'], body.landing form.form-card input[type='email'] {
 	width: 100%;
 	margin-bottom: 15px;
 }
 
-form.form-card .checkbox-wrapper {
+body.landing form.form-card .checkbox-wrapper {
 	display: block;
 	position: relative;
+	top: 0;
+	left: 0;
 	padding-left: 35px;
 	margin-bottom: 15px;
 	color: #B8C0CA;
@@ -55,9 +94,10 @@ form.form-card .checkbox-wrapper {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	opacity: 1;
 }
 
-form.form-card .checkbox-wrapper input {
+body.landing form.form-card .checkbox-wrapper input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
@@ -65,7 +105,7 @@ form.form-card .checkbox-wrapper input {
 	width: 0;
 }
 
-form.form-card .checkbox {
+body.landing form.form-card .checkbox {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -75,25 +115,25 @@ form.form-card .checkbox {
 	background-color: #B8C0CA;
 }
 
-form.form-card .checkbox-wrapper:hover input ~ .checkbox {
+body.landing form.form-card .checkbox-wrapper:hover input ~ .checkbox {
 	background-color: #B8C0CA;
 }
 
-form.form-card .checkbox-wrapper input:checked ~ .checkbox {
+body.landing form.form-card .checkbox-wrapper input:checked ~ .checkbox {
 	background-color: #5A2E8A;
 }
 
-form.form-card .checkbox:after {
+body.landing form.form-card .checkbox:after {
 	content: "";
 	position: absolute;
 	display: none;
 }
 
-form.form-card .checkbox-wrapper input:checked ~ .checkbox:after {
+body.landing form.form-card .checkbox-wrapper input:checked ~ .checkbox:after {
 	display: block;
 }
 
-form.form-card .checkbox-wrapper .checkbox:after {
+body.landing form.form-card .checkbox-wrapper .checkbox:after {
 	left: 7px;
 	top: 3px;
 	width: 5px;
@@ -105,7 +145,7 @@ form.form-card .checkbox-wrapper .checkbox:after {
 	transform: rotate(45deg);
 }
 
-form.form-card .btn {
+body.landing form.form-card .btn {
 	display: block;
 	text-align: center;
 }

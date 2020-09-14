@@ -6,27 +6,27 @@
 */
 
 @font-face {
-    font-family: 'Avenir LT Std';
-    src: url('../font/AvenirLTStd-Book.woff2') format('woff2'),
-        url('../font/AvenirLTStd-Book.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: "GT-Walsheim";
+	src: url('../font/gt-walsheim-pro-bold-webfont.woff2') format('woff2'),
+	url('../font/gt-walsheim-pro-bold-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir LT Std';
-    src: url('../font/AvenirLTStd-Black.woff2') format('woff2'),
-        url('../font/AvenirLTStd-Black.woff') format('woff');
-    font-weight: 900;
-    font-style: normal;
+	font-family: "GT-Walsheim";
+	src: url('../font/gt-walsheim-pro-medium-webfont.woff2') format('woff2'),
+	url('../font/gt-walsheim-pro-medium-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-    font-family: 'Avenir LT Std';
-    src: url('../font/AvenirLTStd-Roman.woff2') format('woff2'),
-        url('../font/AvenirLTStd-Roman.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: "GT-Walsheim";
+	src: url('../font/gt-walsheim-pro-regular-webfont.woff2') format('woff2'),
+	url('../font/gt-walsheim-pro-regular-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
 * {
@@ -36,11 +36,12 @@
 
 body {
 	margin: 0;
-	padding: 70px 0 0 0;
-    font-family: 'Avenir LT Std';
+	padding: 107px 0 0 0;
+	font-family: 'GT-Walsheim', 'Overpass', sans-serif;
+	font-size: 16px;
     font-weight: normal;
     font-style: normal;
-	line-height: 1.6;
+	line-height: 1.5;
 }
 
 body.modal-open {
@@ -92,7 +93,7 @@ img {
 
 @media all and (min-width: 800px) {
 	body {
-		padding: 74px 0 0 0;
+		padding: 115px 0 0 0;
 	}
 
 	h2.text-tablet-left {

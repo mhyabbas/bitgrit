@@ -6,11 +6,16 @@
 */
 
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
+  padding: 15px 0;
   width: 100%;
   background: white;
   z-index: 100;
+}
+
+.nav.scroll {
+  box-shadow: 0 7px 13px 0 rgba(0,0,0,0.04);
 }
 
 .nav ul {
@@ -35,11 +40,6 @@
   padding: 15px 25px;
 }
 
-.nav a {
-  color: black;
-  text-decoration: none;
-}
-
 .nav .toggle a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,6 +47,10 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.nav .toggle a:after {
+  display: none;
 }
 
 .nav .toggle svg {
@@ -61,14 +65,39 @@
 
 .nav .logo img {
   display: block;
-  max-width: 102px;
+  max-width: 118px;
 }
 
 .nav .item {
   display: none;
   width: 100%;
   background-color: white;
-  border-top: 2px solid #EFE9F4;
+}
+
+.nav .item a {
+  position: relative;
+  padding: 5px 15px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.6s;
+}
+
+.nav .item a:hover{
+  color: #640e9b;
+}
+
+.nav .item a:after {
+  position: absolute;
+  border-bottom: 2px solid #640e9b;
+  bottom: 0;
+  content: '';
+  left: 0;
+  transition: 0.4s;
+  width: 0;
+}
+
+.nav .item a:hover:after {
+  width: 100%;
 }
 
 .nav .item.active {
@@ -81,9 +110,14 @@
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  padding: 16px 32px;
 }
 
-@media all and (min-width: 800px) {
+.nav .item .btn:after {
+  display: none;
+}
+
+@media all and (min-width: 1000px) {
   .nav ul {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -102,21 +136,21 @@
     margin-right: auto;
   }
 
-  .nav .logo img {
-    max-width: 118px;
-  }
-
- .nav .item {
+  .nav .item {
     display: block;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
     width: auto;
     background-color: inherit;
     border-top: inherit;
     text-align: center;
   }
 
-  .nav .login {
+  .nav .item a {
+    padding: 15px;
+  }
+
+  .nav .register {
     padding-right: inherit;
   }
 }

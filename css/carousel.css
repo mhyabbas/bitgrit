@@ -76,7 +76,7 @@ svg.carousel-arrow {
 	margin: 0 10px;
 	width: 30px;
 	height: 30px;
-	fill: #924CCC;
+	fill: #6F389F;
 	cursor: pointer;
 	-webkit-transition: all .4s;
 	-o-transition: all .4s;
@@ -92,7 +92,7 @@ svg.carousel-arrow path {
 }
 
 svg.carousel-arrow:hover {
-	fill: #6b2d9e;
+	fill: #4a246b;
 }
 
 @media all and (min-width: 600px) {

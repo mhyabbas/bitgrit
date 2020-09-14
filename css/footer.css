@@ -6,23 +6,10 @@
 */
 
 footer {
-	padding-top: 30px;
-	padding-bottom: 30px;
-	background-color: #5A2E8A;
+	padding: 55px 0;
+	background-color: #582c7f;
 	color: #EFE9F4;
 	font-size: 14px;
-}
-
-footer .row:first-of-type .column {
-	-webkit-box-flex: 0;
-	-ms-flex: 0 0 22%;
-	flex: 0 0 22%;
-}
-
-footer .row:first-of-type .column:first-of-type {
-	-webkit-box-flex: 1;
-	-ms-flex: 1 0 34%;
-	flex: 1 0 34%;
 }
 
 footer img.logo {
@@ -33,17 +20,20 @@ footer img.logo {
 
 footer h3 {
 	color: white;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: normal;
 	text-transform: uppercase;
+	letter-spacing: 2.63px;
 }
 
 footer p {
-	margin: 5px 0;
+	margin: 10px 0;
+	color: #ffffff;
+	opacity: 0.6;
 }
 
 footer a {
-	color: #EFE9F4;
+	color: #ffffff;
 	text-decoration: none;
 }
 
@@ -51,22 +41,78 @@ footer .social {
 	margin-top: 30px;
 }
 
-footer .social svg {
-	width: 30px;
-	height: 30px;
-	margin-right: 5px;
+footer .social a {
+    background: #fff;
+    border-radius: 50%;
+    color: #572d7f;
+    margin-right: 10px;
+    padding: 5px 2px;
+    text-align: center;
+}
+
+footer .social a em {
+    height: 30px;
+    width: 30px;
+}
+
+footer .social a:hover{
+    color: #07020c;
+    opacity: 0.6;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+footer .row:first-of-type .column:first-of-type p {
+	line-height: 26px;
 }
 
 footer .row.copyright .column {
 	padding-top: 10px;
 	padding-bottom: 10px;
+	font-size: 16px;
+}
+
+footer .row.copyright .column:last-of-type {
+	opacity: 0.6;
 }
 
 @media all and (min-width: 800px) {
 	footer .row {
+		display: block;
+	}
+}
+
+@media all and (min-width: 1000px) {
+	footer .row {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
 		-webkit-box-align: flex-start;
 		-ms-flex-align: flex-start;
 		align-items: flex-start;
+	}
+
+	footer .row:first-of-type .column {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 17%;
+		flex: 0 0 17%;
+	}
+
+	footer .row:first-of-type .column:first-of-type {
+		-webkit-box-flex: 1;
+		-ms-flex: 1 0 40%;
+		flex: 1 0 40%;
+		padding-right: 5%;
+	}
+
+	footer .row:first-of-type .column:last-of-type {
+		-webkit-box-flex: 1;
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
 	}
 
 	footer img.logo {
