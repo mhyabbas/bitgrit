@@ -31,7 +31,8 @@
 }
 
 .btn:hover {
-    box-shadow: 0 6px 6px 0 rgba(111, 56, 159, 0.29);
+    -webkit-box-shadow: 0 6px 6px 0 rgba(111, 56, 159, 0.29);
+            box-shadow: 0 6px 6px 0 rgba(111, 56, 159, 0.29);
 }
 
 .btn.btn-white {
